@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>永續荖濃 USR × 企業永續合作｜高雄醫學大學</title>
+<meta name="description" content="高雄醫學大學永續荖濃 USR 計畫——企業出資金，大學出專業，偏鄉受益。USR × CSR/ESG 共構提案。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FAF7F2;
+  --ink:#1A1A1A;
+  --ink-soft:#4a4a4a;
+  --seal:#B3342E;
+  --seal-dark:#8f2822;
+  --line:#e3ddd2;
+  --gold:#9C6B15;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Noto Serif TC',serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.9;
+  font-size:17px;
+  -webkit-font-smoothing:antialiased;
+}
+.sans{font-family:'Noto Sans TC',sans-serif}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+section{padding:88px 0}
+h2{
+  font-size:clamp(26px,4vw,34px);
+  font-weight:700;
+  letter-spacing:.08em;
+  margin-bottom:14px;
+}
+h2::after{
+  content:"";display:block;width:56px;height:3px;
+  background:var(--seal);margin-top:16px;
+}
+.lead{color:var(--ink-soft);max-width:640px;margin-bottom:44px;text-wrap:balance}
+.lead-story{max-width:none}
+@media(max-width:640px){.br-d{display:none}}
+.red{color:var(--seal)}
+.center{text-align:center}
+img{max-width:100%;display:block}
+
+/* ---------- Hero ---------- */
+.hero{
+  min-height:92vh;
+  display:flex;flex-direction:column;justify-content:center;
+  position:relative;
+  padding:60px 0 80px;
+  overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;right:-12%;top:-6%;
+  width:min(66vw,540px);height:min(66vw,540px);
+  background:url('img/kmu-seal.png') no-repeat center/contain;
+  opacity:.045;pointer-events:none;
+}
+.hero .kmu{width:min(300px,64vw);margin-bottom:40px}
+.hero .tag{
+  font-size:14px;letter-spacing:.35em;color:var(--seal);
+  margin-bottom:20px;font-weight:600;
+}
+.hero h1{
+  font-size:clamp(34px,6.4vw,58px);
+  font-weight:900;line-height:1.35;letter-spacing:.05em;
+  margin-bottom:28px;
+}
+.hero h1 .mark{
+  background:linear-gradient(transparent 68%,rgba(179,52,46,.18) 68%);
+}
+.hero p.sub{
+  font-size:clamp(16px,2.4vw,20px);
+  color:var(--ink-soft);max-width:620px;margin-bottom:40px;
+}
+.hero-photo{
+  margin-top:24px;border:1px solid var(--line);
+  box-shadow:0 20px 60px -30px rgba(26,26,26,.35);
+}
+.hero-photo figcaption{
+  font-size:13px;color:#8a8378;padding:10px 4px;letter-spacing:.06em;
+  font-family:'Noto Sans TC',sans-serif;
+}
+.scroll-hint{
+  margin-top:44px;font-size:13px;letter-spacing:.3em;color:#a09a8e;
+  font-family:'Noto Sans TC',sans-serif;
+}
+
+/* ---------- 數字帶 ---------- */
+.stats{
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:#fff;
+  padding:56px 0;
+}
+.stats .grid{
+  display:grid;grid-template-columns:repeat(5,1fr);gap:12px;text-align:center;
+}
+.stat b{
+  display:block;font-size:clamp(26px,4vw,42px);
+  font-family:'Noto Sans TC',sans-serif;font-weight:700;
+  color:var(--seal);letter-spacing:.02em;
+}
+.stat span{font-size:13px;color:var(--ink-soft);letter-spacing:.08em}
+@media(max-width:720px){
+  .stats .grid{grid-template-columns:repeat(2,1fr);gap:28px 8px}
+  .stat:last-child{grid-column:1/-1}
+}
+
+/* ---------- 故事區 ---------- */
+.story{position:relative}
+.story .frame{
+  border-left:4px solid var(--gold);
+  background:#fff;
+  padding:40px 36px;
+  box-shadow:0 14px 44px -26px rgba(26,26,26,.25);
+}
+.story .frame p{margin-bottom:18px}
+.story .frame p:last-child{margin-bottom:0}
+.quote-full{
+  padding:110px 0;text-align:center;
+  position:relative;overflow:hidden;
+}
+.quote-full::before{
+  content:"";position:absolute;left:2%;bottom:4%;
+  width:min(36vw,266px);height:min(31vw,225px);
+  background:url('img/laonong-wm.png') no-repeat center/contain;
+  opacity:.05;pointer-events:none;
+}
+.quote-full blockquote{
+  font-size:clamp(24px,4.6vw,40px);
+  font-weight:700;letter-spacing:.08em;line-height:1.7;
+  color:var(--seal);
+}
+.quote-full cite{
+  display:block;margin-top:26px;font-style:normal;
+  font-size:14px;color:var(--ink-soft);letter-spacing:.15em;
+  font-family:'Noto Sans TC',sans-serif;
+}
+.echo{
+  text-align:center;max-width:640px;margin:0 auto;
+}
+.echo .kid{
+  font-size:clamp(19px,3vw,24px);font-weight:700;letter-spacing:.06em;
+  margin:26px 0 14px;
+}
+.echo .close{
+  font-size:15px;color:var(--ink-soft);letter-spacing:.2em;
+}
+.story-photo{
+  margin:56px auto 0;max-width:720px;
+  border:1px solid var(--line);
+}
+.story-photo figcaption{
+  font-size:13px;color:#8a8378;padding:10px 4px;
+  font-family:'Noto Sans TC',sans-serif;letter-spacing:.06em;text-align:center;
+}
+
+/* ---------- 閉環 ---------- */
+.loop{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.loop .chain{
+  display:grid;grid-template-columns:1fr auto 1fr auto 1fr;
+  align-items:stretch;gap:0;margin-top:20px;
+}
+.loop .node{
+  background:var(--paper);border:1px solid var(--line);
+  padding:26px 22px;text-align:center;
+}
+.loop .node .stage{
+  font-size:13px;letter-spacing:.25em;color:var(--seal);
+  font-family:'Noto Sans TC',sans-serif;font-weight:700;margin-bottom:10px;
+}
+.loop .node h3{font-size:19px;letter-spacing:.06em;margin-bottom:8px}
+.loop .node p{font-size:14px;color:var(--ink-soft);line-height:1.8}
+.loop .arrow{
+  display:flex;align-items:center;padding:0 10px;
+  color:var(--seal);font-size:22px;font-family:'Noto Sans TC',sans-serif;
+}
+.loop .node img{margin:0 auto 16px;border:1px solid var(--line);aspect-ratio:4/3;object-fit:cover}
+.loop .conclusion{
+  margin-top:44px;text-align:center;
+  font-size:clamp(16px,2.4vw,19px);color:var(--gold);font-weight:700;letter-spacing:.08em;
+}
+@media(max-width:760px){
+  .loop .chain{grid-template-columns:1fr}
+  .loop .arrow{justify-content:center;padding:6px 0;transform:rotate(90deg)}
+}
+
+/* ---------- 丁框架三步驟 ---------- */
+.why{background:var(--ink);color:#efe9df}
+.why h2{color:#efe9df}
+.why h2::after{background:var(--seal)}
+.why .lead{color:#b9b2a5}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
+.step{
+  border:1px solid rgba(239,233,223,.18);
+  padding:32px 26px;
+}
+.step .no{
+  font-family:'Noto Sans TC',sans-serif;font-size:13px;letter-spacing:.3em;
+  color:var(--seal);font-weight:700;margin-bottom:14px;
+}
+.step h3{font-size:19px;margin-bottom:12px;letter-spacing:.05em;color:#fff}
+.step p{font-size:14.5px;line-height:1.9;color:#c9c2b4}
+.why .final{
+  margin-top:56px;text-align:center;
+  font-size:clamp(20px,3.6vw,30px);font-weight:700;letter-spacing:.1em;
+}
+.why .final .red{color:#e05a52}
+@media(max-width:760px){.steps{grid-template-columns:1fr}}
+
+/* ---------- 模組卡片 ---------- */
+.mods .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.card{
+  background:#fff;border:1px solid var(--line);
+  padding:32px 30px;position:relative;
+}
+.card.main{border-top:4px solid var(--seal)}
+.card .badge{
+  position:absolute;top:0;right:0;
+  background:var(--seal);color:#fff;font-size:12px;letter-spacing:.2em;
+  padding:5px 14px;font-family:'Noto Sans TC',sans-serif;
+}
+.card .mod-id{
+  font-family:'Noto Sans TC',sans-serif;font-size:13px;letter-spacing:.25em;
+  color:#a09a8e;margin-bottom:8px;
+}
+.card h3{font-size:21px;letter-spacing:.05em;margin-bottom:6px}
+.card .price{
+  font-family:'Noto Sans TC',sans-serif;
+  font-size:24px;font-weight:700;color:var(--seal);margin-bottom:14px;
+}
+.card .price small{font-size:13px;color:var(--ink-soft);font-weight:400}
+.card p{font-size:14.5px;color:var(--ink-soft);line-height:1.9}
+.mods .note{
+  margin-top:30px;font-size:14px;color:var(--gold);letter-spacing:.04em;
+}
+@media(max-width:720px){.mods .cards{grid-template-columns:1fr}}
+
+/* ---------- 企業獲得 ---------- */
+.gain{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.gain .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:36px}
+.gain .col{text-align:center;padding:0 8px}
+.gain .glyph{
+  width:64px;height:64px;margin:0 auto 18px;
+  border:2px solid var(--seal);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:26px;color:var(--seal);
+  font-family:'Noto Sans TC',sans-serif;font-weight:700;
+}
+.gain h3{font-size:18px;letter-spacing:.08em;margin-bottom:10px}
+.gain p{font-size:14px;color:var(--ink-soft);line-height:1.9}
+.gain .fund{
+  margin-top:48px;text-align:center;
+  font-size:15px;letter-spacing:.1em;
+  border-top:1px dashed var(--line);padding-top:30px;
+  color:var(--ink-soft);
+}
+.gain .fund b{color:var(--ink)}
+@media(max-width:720px){.gain .cols{grid-template-columns:1fr;gap:40px}}
+
+/* ---------- 公信力帶 ---------- */
+.trust{padding:60px 0}
+.trust ul{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:14px 34px;
+  list-style:none;
+}
+.trust li{
+  font-size:14px;letter-spacing:.1em;color:var(--ink-soft);
+  font-family:'Noto Sans TC',sans-serif;
+  display:flex;align-items:center;gap:8px;
+}
+.trust li::before{content:"◆";color:var(--seal);font-size:9px}
+
+/* ---------- CTA ---------- */
+.cta{
+  background:var(--seal);color:#fff;text-align:center;
+  padding:96px 0;
+}
+.cta h2{color:#fff;font-size:clamp(26px,4.4vw,38px)}
+.cta h2::after{background:#fff;margin-left:auto;margin-right:auto}
+.cta p{max-width:560px;margin:0 auto 40px;color:rgba(255,255,255,.85)}
+.btn{
+  display:inline-block;background:#fff;color:var(--seal);
+  font-family:'Noto Sans TC',sans-serif;font-weight:700;
+  font-size:17px;letter-spacing:.15em;
+  padding:16px 52px;text-decoration:none;
+  transition:transform .15s ease, box-shadow .15s ease;
+  box-shadow:0 10px 30px -12px rgba(0,0,0,.4);
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 38px -12px rgba(0,0,0,.45)}
+.cta .alt{
+  margin-top:26px;font-size:14.5px;letter-spacing:.08em;
+  color:rgba(255,255,255,.85);font-family:'Noto Sans TC',sans-serif;
+}
+/* 預留：完整提案書下載按鈕（暫不啟用）
+.btn-ghost{border:1.5px solid #fff;color:#fff;background:transparent;margin-left:14px}
+*/
+
+/* ---------- Footer ---------- */
+footer{
+  padding:56px 0 64px;text-align:center;
+}
+footer .logo-row{
+  display:flex;align-items:center;justify-content:center;gap:28px;
+  margin-bottom:26px;
+}
+footer .kmu{width:min(320px,60vw);opacity:.92}
+footer .laonong{width:auto;height:76px;opacity:.9}
+footer .divider{width:1px;height:52px;background:var(--line)}
+@media(max-width:520px){
+  footer .logo-row{flex-direction:column;gap:18px}
+  footer .divider{width:52px;height:1px}
+}
+footer p{font-size:13px;color:#8a8378;letter-spacing:.1em;line-height:2;font-family:'Noto Sans TC',sans-serif}
+
+/* ---------- 進場動畫 ---------- */
+.fade{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.fade.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<!-- ① Hero -->
+<header class="hero">
+  <div class="wrap">
+    <img class="kmu" src="img/kmu.png" alt="高雄醫學大學">
+    <div class="tag sans">教育部大學社會責任實踐計畫（USR）第四期</div>
+    <h1>企業出資金，大學出專業，<br>偏鄉的孩子<span class="mark">多一種可能</span>。</h1>
+    <p class="sub">永續荖濃 USR × 企業 CSR／ESG 共構——<br class="br-d">一個已運作多年、教育部核定、有量化研究支撐的實踐場域。</p>
+    <figure class="hero-photo fade">
+      <img src="img/hero.jpg" alt="新發國小假日學堂課程結束後合影">
+      <figcaption>新發國小假日學堂．課程結束後合影</figcaption>
+    </figure>
+    <div class="scroll-hint sans">SCROLL ─ 往下看這件事如何發生</div>
+  </div>
+</header>
+
+<!-- ② 數字帶 -->
+<div class="stats">
+  <div class="wrap">
+    <div class="grid">
+      <div class="stat fade"><b data-n="3">0</b><span>年偏鄉深耕（112 年起）</span></div>
+      <div class="stat fade"><b data-n="40" data-suffix="+">0</b><span>每年受訓大學生講師</span></div>
+      <div class="stat fade"><b data-n="400" data-suffix="+">0</b><span>年服務人次</span></div>
+      <div class="stat fade"><b data-n="20">0</b><span>在地合作單位（MOU）</span></div>
+      <div class="stat fade"><b>IRB</b><span>研究倫理審查核准</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ③ 故事區 -->
+<section class="story">
+  <div class="wrap">
+    <h2>一位完整走過這條路的青年</h2>
+    <p class="lead lead-story">高醫校友陳俊志醫師回到六龜深耕十餘年，<br class="br-d">他指導的尼布恩合唱團曾獲世界合唱大賽金牌，陪伴一代六龜孩子長大。<br class="br-d">本計畫接續這條路——聲樂社與在地學校合唱團長期合作，每年舉辦音樂營與聯合演出。</p>
+    <div class="frame fade">
+      <p>呂盈萱，正是這條路上走出來的孩子。她從尼布恩合唱團一路成長，考入高雄醫學大學，成為本計畫合作社團——聲樂社的社長。</p>
+      <p>今年寒假，她率領 55 位高醫學生回到六龜寶來國中，為 43 位國中生舉辦音樂營，用自己的求學經歷告訴學弟妹：偏鄉的孩子，也能勇敢築夢。</p>
+    </div>
+  </div>
+  <div class="quote-full">
+    <div class="wrap">
+      <blockquote class="fade">「偏鄉的孩子，<br>其實很少有做夢的機會。」</blockquote>
+      <cite>—— 呂盈萱．高醫聲樂社社長（中央社訊息平台，2026 年 1 月）</cite>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="echo fade">
+      <p>受助者成長為服務者，並回到家鄉帶領下一代。<br>而在這條路的起點，一位三年級學童在假日學堂回饋單寫下：</p>
+      <p class="kid">「很開心，因為有大哥哥大姐姐陪我。」</p>
+      <p class="close">起點與終點，是同一件事。</p>
+    </div>
+    <figure class="story-photo fade">
+      <img src="img/story.jpg" alt="假日學堂學童動手進行科學實驗">
+      <figcaption>新發國小假日學堂．學童動手進行科學實驗</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ④ 閉環 -->
+<section class="loop">
+  <div class="wrap">
+    <h2>一條完整的陪伴閉環</h2>
+    <p class="lead">三支專業團隊，在孩子人生的不同階段接力投入。</p>
+    <div class="chain">
+      <div class="node fade">
+        <img src="img/eit.jpg" alt="幼兒發展評估與促進">
+        <div class="stage">學齡前</div>
+        <h3>幼兒發展評估與促進</h3>
+        <p>職能治療團隊進入幼兒園，進行發展評估與促進活動，及早發現、及時轉介，把握黃金療育期。</p>
+      </div>
+      <div class="arrow">→</div>
+      <div class="node fade">
+        <img src="img/m-sci.jpg" alt="假日學堂">
+        <div class="stage">國小</div>
+        <h3>假日學堂</h3>
+        <p>週六科學探索課程，點燃探索動力、擴大對世界的想像。</p>
+      </div>
+      <div class="arrow">→</div>
+      <div class="node fade">
+        <img src="img/ratio.jpg" alt="偏鄉課輔">
+        <div class="stage">國中・高中</div>
+        <h3>課業輔導與音樂陪伴</h3>
+        <p>大學生進入尼布恩學堂課後輔導；聲樂社以音樂營與聯合演出，陪伴學子建立自信。</p>
+      </div>
+    </div>
+    <p class="conclusion">企業所贊助者，非單一活動，<br>而是一名孩童自學齡前至升學、各階段均有專業陪伴的完整歷程。</p>
+  </div>
+</section>
+
+<!-- ⑤ 丁框架三步驟（墨黑區） -->
+<section class="why">
+  <div class="wrap">
+    <h2>為什麼需要企業的參與</h2>
+    <p class="lead">不是因為現在缺錢——是因為孩子的成長，不該跟著預算週期起伏。</p>
+    <div class="steps">
+      <div class="step fade">
+        <div class="no">STEP 01</div>
+        <h3>服務已穩定運作</h3>
+        <p>各項行動均在教育部 USR 經費支持下運作多年——不是等待啟動資金的計畫，而是已證明有效、正在守護孩子的常態機制。</p>
+      </div>
+      <div class="step fade">
+        <div class="no">STEP 02</div>
+        <h3>但政府計畫有其週期</h3>
+        <p>USR 計畫逐期審查、逐期核定。本計畫正在為這些服務建立不依賴單一政府預算的長期支持基礎。</p>
+      </div>
+      <div class="step fade">
+        <div class="no">STEP 03</div>
+        <h3>企業支持＝延續</h3>
+        <p>讓早療團隊持續進入幼兒園，讓大學生往返偏鄉的車輪，不因任何一期預算的結束而停下。</p>
+      </div>
+    </div>
+    <p class="final fade">您支持的不是一場活動，<br>而是<span class="red">一份延續</span>。</p>
+  </div>
+</section>
+
+<!-- ⑥ 模組卡片 -->
+<section class="mods">
+  <div class="wrap">
+    <h2>合作模組</h2>
+    <p class="lead">低決策門檻設計，可單獨認養、亦可組合。</p>
+    <div class="cards">
+      <div class="card main fade">
+        <div class="badge">主推</div>
+        <div class="mod-id">MODULE A</div>
+        <h3>假日學堂．偏鄉科普</h3>
+        <div class="price">30 萬<small>／年（15 萬／學期）</small></div>
+        <p>贊助 STEAM 科技教具與實驗耗材，讓已運作三年、成效明確的假日學堂深入更多山區與鄰近地區。</p>
+      </div>
+      <div class="card main fade">
+        <div class="badge">主推</div>
+        <div class="mod-id">MODULE B</div>
+        <h3>幼兒發展評估與促進</h3>
+        <div class="price">20 萬<small>／年（10 萬／學期）</small></div>
+        <p>支持職能治療學系師生團隊駐點三所偏鄉幼兒園，進行發展評估與促進活動；發現疑似發展遲緩之個案，協助銜接後續療育資源。每次出隊不到 8,500 元，即完成一場 7 人專業團隊的到園服務。</p>
+      </div>
+      <div class="card fade">
+        <div class="mod-id">MODULE C</div>
+        <h3>偏鄉課輔．交通支持</h3>
+        <div class="price">20 萬<small>／年（10 萬／學期）</small></div>
+        <p>資金全數用於大學生往返六龜之交通（每週 1 車次、全年 32 趟），延續國小到高中的支持鏈。</p>
+      </div>
+      <div class="card fade">
+        <div class="badge" style="background:var(--gold)">事件型</div>
+        <div class="mod-id">MODULE D</div>
+        <h3>寶來音樂營．冠名贊助</h3>
+        <div class="price">10 萬<small>／場（一次性）</small></div>
+        <p>本校聲樂社每年於寶來國中舉辦音樂營。冠名企業享活動主視覺與舞台背板識別、開幕出席致詞、聯合新聞稿與影像授權——最適合首次合作的入門選擇。</p>
+      </div>
+    </div>
+    <p class="note">※ 模組 A、B、C 合計即構成「幼兒園—國小—國高中」之完整陪伴閉環；模組 D 為事件型合作，適合首次參與。</p>
+    <p class="note" style="color:var(--ink-soft)">另有國高中多元發展年度方案，及在地創生（六龜原生茶種研究）等前瞻合作，歡迎洽談。</p>
+  </div>
+</section>
+
+<!-- ⑦ 企業獲得 -->
+<section class="gain">
+  <div class="wrap">
+    <h2>貴公司獲得什麼</h2>
+    <div class="cols">
+      <div class="col fade">
+        <div class="glyph">數</div>
+        <h3>ESG 報告數據</h3>
+        <p>SDGs 3・4・10・17 對接指標、IRB 核准之量化研究、SROI 效益評估（產出後提供）。</p>
+      </div>
+      <div class="col fade">
+        <div class="glyph">名</div>
+        <h3>品牌曝光</h3>
+        <p>企業識別融入學堂背心、教具與布條；校級聯合新聞稿；經授權影像供永續報告書使用。</p>
+      </div>
+      <div class="col fade">
+        <div class="glyph">人</div>
+        <h3>員工參與</h3>
+        <p>一站式志工模組——同仁僅需出人，即產出具價值之志工時數與員工投入感。</p>
+      </div>
+    </div>
+    <p class="fund">捐款納入<b>高雄醫學大學校務基金</b>，開立正式受贈收據、可依法列報捐贈支出，<b>專款專用</b>並提供年度成效報告。</p>
+  </div>
+</section>
+
+<!-- ⑧ 公信力帶 -->
+<div class="trust">
+  <div class="wrap">
+    <ul>
+      <li>教育部 USR 第四期核定計畫</li>
+      <li>20 所學校與社區團體 MOU</li>
+      <li>屏東大學教育學院跨校合作</li>
+      <li>人體試驗審查委員會（IRB）核准研究</li>
+      <li>2025 USR EXPO 展出</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ⑨ CTA -->
+<section class="cta">
+  <div class="wrap">
+    <h2>與我們談一次</h2>
+    <p>一次會面，我們將完整說明合作模組、回饋機制與行政程序，並提供完整提案書。</p>
+    <a class="btn" href="mailto:r121076@kmu.edu.tw?subject=【企業合作洽詢】永續荖濃USR">來信洽詢合作</a>
+    <!-- 預留：完整提案書下載（暫不啟用）
+    <a class="btn btn-ghost" href="proposal.pdf" download>下載完整提案書</a>
+    -->
+    <p class="alt">合作洽談信箱｜r121076@kmu.edu.tw<br>辦公室電話｜07-3121101 分機 2209 轉 57</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="wrap">
+    <div class="logo-row">
+      <img class="kmu" src="img/kmu.png" alt="高雄醫學大學">
+      <span class="divider"></span>
+      <img class="laonong" src="img/laonong.png" alt="永續荖濃">
+    </div>
+    <p>永續荖濃人才培育與健康發展計畫（荖濃 USR）<br>
+    高雄醫學大學　口腔醫學院<br>
+    教育部大學社會責任實踐計畫（USR）第四期</p>
+  </div>
+</footer>
+
+<script>
+// 進場動畫
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+},{threshold:.18});
+document.querySelectorAll('.fade').forEach(el=>io.observe(el));
+
+// 數字跳動
+const nio=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(!e.isIntersecting) return;
+    const el=e.target, target=+el.dataset.n, suf=el.dataset.suffix||'';
+    if(!target){nio.unobserve(el);return;}
+    const dur=1100, t0=performance.now();
+    (function tick(t){
+      const p=Math.min((t-t0)/dur,1);
+      el.textContent=Math.round(target*(1-Math.pow(1-p,3)))+suf;
+      if(p<1) requestAnimationFrame(tick);
+    })(t0);
+    nio.unobserve(el);
+  });
+},{threshold:.6});
+document.querySelectorAll('.stat b[data-n]').forEach(el=>nio.observe(el));
+</script>
+</body>
+</html>
