@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>永續荖濃 USR × 企業永續合作｜高雄醫學大學</title>
-<meta name="description" content="高雄醫學大學永續荖濃 USR 計畫——企業出資金，大學出專業，偏鄉受益。USR × CSR/ESG 共構提案。">
+<title>永續荖濃 USR｜高雄醫學大學</title>
+<meta name="description" content="永續荖濃人才培育與健康發展計畫——一所醫學大學與六龜、桃源孩子走過十年的路。計畫全貌、企業合作、學校合作。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
@@ -322,215 +322,85 @@ footer p{font-size:13px;color:#8a8378;letter-spacing:.1em;line-height:2;font-fam
 /* ---------- 進場動畫 ---------- */
 .fade{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
 .fade.in{opacity:1;transform:none}
+
+.gateway{margin-top:10px}
+.gw-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+.gw{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);background:#fff;transition:transform .18s,box-shadow .18s}
+.gw:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(26,24,21,.08)}
+.gw img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.gw .body{padding:22px 24px 26px}
+.gw .kicker{font-family:'Noto Sans TC',sans-serif;font-size:12.5px;letter-spacing:.24em;color:var(--seal);margin-bottom:8px}
+.gw h3{font-size:20px;letter-spacing:.04em;margin-bottom:8px}
+.gw p{font-size:14.5px;color:var(--ink-soft);line-height:1.85}
+.gw .go{display:inline-block;margin-top:14px;font-family:'Noto Sans TC',sans-serif;font-size:13.5px;letter-spacing:.14em;color:var(--seal)}
+@media(max-width:860px){.gw-cards{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
 
-<!-- ① Hero -->
 <header class="hero">
   <div class="wrap">
-    <img class="kmu" src="img/kmu.png" alt="高雄醫學大學">
-    <div class="tag sans">教育部大學社會責任實踐計畫（USR）第四期</div>
-    <h1>企業出資金，大學出專業，<br>偏鄉的孩子<span class="mark">多一種可能</span>。</h1>
-    <p class="sub">永續荖濃 USR × 企業 CSR／ESG 共構——<br class="br-d">一個已運作多年、教育部核定、有量化研究支撐的實踐場域。</p>
-    <figure class="hero-photo fade">
-      <img src="img/hero.jpg" alt="新發國小假日學堂課程結束後合影">
-      <figcaption>新發國小假日學堂．課程結束後合影</figcaption>
-    </figure>
-    <div class="scroll-hint sans">SCROLL ─ 往下看這件事如何發生</div>
+    <p class="tag">永續荖濃 USR</p>
+    <h1>一所醫學大學，<br class="br-d">與六龜、桃源的孩子，<br><span class="mark">走了十年的路。</span></h1>
+    <p class="sub">永續荖濃人才培育與健康發展計畫．教育部大學社會責任實踐計畫（USR）第四期</p>
   </div>
 </header>
 
-<!-- ② 數字帶 -->
-<div class="stats">
-  <div class="wrap">
-    <div class="grid">
-      <div class="stat fade"><b data-n="3">0</b><span>年偏鄉深耕（112 年起）</span></div>
-      <div class="stat fade"><b data-n="40" data-suffix="+">0</b><span>每年受訓大學生講師</span></div>
-      <div class="stat fade"><b data-n="400" data-suffix="+">0</b><span>年服務人次</span></div>
-      <div class="stat fade"><b data-n="20">0</b><span>在地合作單位（MOU）</span></div>
-      <div class="stat fade"><b>IRB</b><span>研究倫理審查核准</span></div>
-    </div>
-  </div>
-</div>
+<section class="stats">
+  <div class="wrap"><div class="grid">
+    <div class="stat fade"><b data-n="10">0</b><span>年在地深耕</span></div>
+    <div class="stat fade"><b data-n="20">0</b><span>所場域合作單位（MOU）</span></div>
+    <div class="stat fade"><b data-n="5">0</b><span>系核心參與學系</span></div>
+    <div class="stat fade"><b data-n="400" data-suffix="+">0</b><span>年服務人次</span></div>
+    <div class="stat fade"><b data-n="40" data-suffix="+">0</b><span>每年受訓大學生講師</span></div>
+  </div></div>
+</section>
 
-<!-- ③ 故事區 -->
-<section class="story">
+<section class="gateway">
   <div class="wrap">
-    <h2>一位完整走過這條路的青年</h2>
-    <p class="lead lead-story">高醫校友陳俊志醫師回到六龜深耕十餘年，<br class="br-d">他指導的尼布恩合唱團曾獲世界合唱大賽金牌，陪伴一代六龜孩子長大。<br class="br-d">本計畫接續這條路——聲樂社與在地學校合唱團長期合作，每年舉辦音樂營與聯合演出。</p>
-    <div class="frame fade">
-      <p>呂盈萱，正是這條路上走出來的孩子。她從尼布恩合唱團一路成長，考入高雄醫學大學，成為本計畫合作社團——聲樂社的社長。</p>
-      <p>今年寒假，她率領 55 位高醫學生回到六龜寶來國中，為 43 位國中生舉辦音樂營，用自己的求學經歷告訴學弟妹：偏鄉的孩子，也能勇敢築夢。</p>
+    <h2>您想從哪裡開始？</h2>
+    <div class="gw-cards">
+      <a class="gw fade" href="about/">
+        <img src="img/hero.jpg" alt="認識這個計畫">
+        <div class="body">
+          <p class="kicker">認識計畫</p>
+          <h3>計畫全貌</h3>
+          <p>兩大核心宗旨、三大主軸，以及十年走出的在地網絡——從這裡認識永續荖濃。</p>
+          <span class="go">了解全貌 &rarr;</span>
+        </div>
+      </a>
+      <a class="gw fade" href="partner/">
+        <img src="img/about-expo.jpg" alt="企業合作">
+        <div class="body">
+          <p class="kicker">企業夥伴</p>
+          <h3>企業合作</h3>
+          <p>企業出資金，大學出專業。以合作模組共同支持偏鄉教育與健康促進的長期行動。</p>
+          <span class="go">合作方案 &rarr;</span>
+        </div>
+      </a>
+      <a class="gw fade" href="school/">
+        <img src="img/school-class.jpg" alt="學校合作">
+        <div class="body">
+          <p class="kicker">學校夥伴</p>
+          <h3>假日學堂．學校合作</h3>
+          <p>想帶一群大學生，去貴校陪孩子過一個週六。試辦不綁約，貴校只需做三件事。</p>
+          <span class="go">合作說明 &rarr;</span>
+        </div>
+      </a>
     </div>
-  </div>
-  <div class="quote-full">
-    <div class="wrap">
-      <blockquote class="fade">「偏鄉的孩子，<br>其實很少有做夢的機會。」</blockquote>
-      <cite>—— 呂盈萱．高醫聲樂社社長（中央社訊息平台，2026 年 1 月）</cite>
-    </div>
-  </div>
-  <div class="wrap">
-    <div class="echo fade">
-      <p>受助者成長為服務者，並回到家鄉帶領下一代。<br>而在這條路的起點，一位三年級學童在假日學堂回饋單寫下：</p>
-      <p class="kid">「很開心，因為有大哥哥大姐姐陪我。」</p>
-      <p class="close">起點與終點，是同一件事。</p>
-    </div>
-    <figure class="story-photo fade">
-      <img src="img/story.jpg" alt="假日學堂學童動手進行科學實驗">
-      <figcaption>新發國小假日學堂．學童動手進行科學實驗</figcaption>
-    </figure>
   </div>
 </section>
 
-<!-- ④ 閉環 -->
-<section class="loop">
-  <div class="wrap">
-    <h2>一條完整的陪伴閉環</h2>
-    <p class="lead">三支專業團隊，在孩子人生的不同階段接力投入。</p>
-    <div class="chain">
-      <div class="node fade">
-        <img src="img/eit.jpg" alt="幼兒發展評估與促進">
-        <div class="stage">學齡前</div>
-        <h3>幼兒發展評估與促進</h3>
-        <p>職能治療團隊進入幼兒園，進行發展評估與促進活動，及早發現、及時轉介，把握黃金療育期。</p>
-      </div>
-      <div class="arrow">→</div>
-      <div class="node fade">
-        <img src="img/m-sci.jpg" alt="假日學堂">
-        <div class="stage">國小</div>
-        <h3>假日學堂</h3>
-        <p>週六科學探索課程，點燃探索動力、擴大對世界的想像。</p>
-      </div>
-      <div class="arrow">→</div>
-      <div class="node fade">
-        <img src="img/ratio.jpg" alt="課業輔導與音樂陪伴">
-        <div class="stage">國中・高中</div>
-        <h3>課業輔導與音樂陪伴</h3>
-        <p>大學生進入尼布恩學堂課後輔導；聲樂社以音樂營與聯合演出，陪伴學子建立自信。</p>
-      </div>
-    </div>
-    <p class="conclusion">企業所贊助者，非單一活動，<br>而是一名孩童自學齡前至升學、各階段均有專業陪伴的完整歷程。</p>
-  </div>
-</section>
-
-<!-- ⑤ 丁框架三步驟（墨黑區） -->
-<section class="why">
-  <div class="wrap">
-    <h2>為什麼需要企業的參與</h2>
-    <p class="lead">不是因為現在缺錢——是因為孩子的成長，不該跟著預算週期起伏。</p>
-    <div class="steps">
-      <div class="step fade">
-        <div class="no">STEP 01</div>
-        <h3>服務已穩定運作</h3>
-        <p>各項行動均在教育部 USR 經費支持下運作多年——不是等待啟動資金的計畫，而是已證明有效、正在守護孩子的常態機制。</p>
-      </div>
-      <div class="step fade">
-        <div class="no">STEP 02</div>
-        <h3>但政府計畫有其週期</h3>
-        <p>USR 計畫逐期審查、逐期核定。本計畫正在為這些服務建立不依賴單一政府預算的長期支持基礎。</p>
-      </div>
-      <div class="step fade">
-        <div class="no">STEP 03</div>
-        <h3>企業支持＝延續</h3>
-        <p>讓職能治療團隊持續進入幼兒園，讓大學生往返偏鄉的車輪，不因任何一期預算的結束而停下。</p>
-      </div>
-    </div>
-    <p class="final fade">您支持的不是一場活動，<br>而是<span class="red">一份延續</span>。</p>
-  </div>
-</section>
-
-<!-- ⑥ 模組卡片 -->
-<section class="mods">
-  <div class="wrap">
-    <h2>合作模組</h2>
-    <p class="lead">低決策門檻設計，可單獨認養、亦可組合。</p>
-    <div class="cards">
-      <div class="card main fade">
-        <div class="badge">主推</div>
-        <div class="mod-id">MODULE A</div>
-        <h3>假日學堂．偏鄉科普</h3>
-        <div class="price">30 萬<small>／年（15 萬／學期）</small></div>
-        <p>贊助 STEAM 科技教具與實驗耗材，讓已運作三年、成效明確的假日學堂深入更多山區與鄰近地區。</p>
-      </div>
-      <div class="card main fade">
-        <div class="badge">主推</div>
-        <div class="mod-id">MODULE B</div>
-        <h3>幼兒發展評估與促進</h3>
-        <div class="price">20 萬<small>／年（10 萬／學期）</small></div>
-        <p>支持職能治療學系師生團隊駐點三所偏鄉幼兒園，進行發展評估與促進活動；發現疑似發展遲緩之個案，協助銜接後續療育資源。每次出隊不到 8,500 元，即完成一場 7 人專業團隊的到園服務。</p>
-      </div>
-      <div class="card fade">
-        <div class="mod-id">MODULE C</div>
-        <h3>偏鄉課輔．交通支持</h3>
-        <div class="price">20 萬<small>／年（10 萬／學期）</small></div>
-        <p>資金全數用於大學生往返六龜之交通（每週 1 車次、全年 32 趟），延續國小到高中的支持鏈。</p>
-      </div>
-      <div class="card fade">
-        <div class="badge" style="background:var(--gold)">事件型</div>
-        <div class="mod-id">MODULE D</div>
-        <h3>寶來音樂營．冠名贊助</h3>
-        <div class="price">10 萬<small>／場（一次性）</small></div>
-        <p>本校聲樂社每年於寶來國中舉辦音樂營。冠名企業享活動主視覺與舞台背板識別、開幕出席致詞、聯合新聞稿與影像授權——最適合首次合作的入門選擇。</p>
-      </div>
-    </div>
-    <p class="note">※ 模組 A、B、C 合計即構成「幼兒園—國小—國高中」之完整陪伴閉環；模組 D 為事件型合作，適合首次參與。</p>
-    <p class="note" style="color:var(--ink-soft)">另有國高中多元發展年度方案，及在地創生（六龜原生茶種研究）等前瞻合作，歡迎洽談。</p>
-  </div>
-</section>
-
-<!-- ⑦ 企業獲得 -->
-<section class="gain">
-  <div class="wrap">
-    <h2>貴公司獲得什麼</h2>
-    <div class="cols">
-      <div class="col fade">
-        <div class="glyph">數</div>
-        <h3>ESG 報告數據</h3>
-        <p>SDGs 3・4・10・17 對接指標、IRB 核准之量化研究、SROI 效益評估（產出後提供）。</p>
-      </div>
-      <div class="col fade">
-        <div class="glyph">名</div>
-        <h3>品牌曝光</h3>
-        <p>企業識別融入學堂背心、教具與布條；校級聯合新聞稿；經授權影像供永續報告書使用。</p>
-      </div>
-      <div class="col fade">
-        <div class="glyph">人</div>
-        <h3>員工參與</h3>
-        <p>一站式志工模組——同仁僅需出人，即產出具價值之志工時數與員工投入感。</p>
-      </div>
-    </div>
-    <p class="fund">捐款納入<b>高雄醫學大學校務基金</b>，開立正式受贈收據、可依法列報捐贈支出，<b>專款專用</b>並提供年度成效報告。</p>
-  </div>
-</section>
-
-<!-- ⑧ 公信力帶 -->
-<div class="trust">
-  <div class="wrap">
-    <ul>
-      <li>教育部 USR 第四期核定計畫</li>
-      <li>20 所學校與社區團體 MOU</li>
-      <li>屏東大學教育學院跨校合作</li>
-      <li>人體試驗審查委員會（IRB）核准研究</li>
-      <li>2025 USR EXPO 展出</li>
-    </ul>
-  </div>
-</div>
-
-<!-- ⑨ CTA -->
 <section class="cta">
   <div class="wrap">
-    <h2>與我們談一次</h2>
-    <p>一次會面，我們將完整說明合作模組、回饋機制與行政程序，並提供完整提案書。</p>
-    <a class="btn" href="mailto:r121076@kmu.edu.tw?subject=【企業合作洽詢】永續荖濃USR">來信洽詢合作</a>
-    <!-- 預留：完整提案書下載（暫不啟用）
-    <a class="btn btn-ghost" href="proposal.pdf" download>下載完整提案書</a>
-    -->
+    <h2>想更了解，或想一起做點什麼</h2>
+    <p>無論您是企業、學校，或只是關心這片土地的人，都歡迎來信。</p>
+    <a class="btn" href="mailto:r121076@kmu.edu.tw?subject=【荖濃USR】洽詢">來信聯絡</a>
     <p class="alt">或洽辦公室電話｜07-3121101 分機 2209 轉 57</p>
   </div>
 </section>
 
-<!-- Footer -->
 <footer>
   <div class="wrap">
     <div class="logo-row">
@@ -545,27 +415,9 @@ footer p{font-size:13px;color:#8a8378;letter-spacing:.1em;line-height:2;font-fam
 </footer>
 
 <script>
-// 進場動畫
-const io=new IntersectionObserver(es=>{
-  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
-},{threshold:.18});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.18});
 document.querySelectorAll('.fade').forEach(el=>io.observe(el));
-
-// 數字跳動
-const nio=new IntersectionObserver(es=>{
-  es.forEach(e=>{
-    if(!e.isIntersecting) return;
-    const el=e.target, target=+el.dataset.n, suf=el.dataset.suffix||'';
-    if(!target){nio.unobserve(el);return;}
-    const dur=1100, t0=performance.now();
-    (function tick(t){
-      const p=Math.min((t-t0)/dur,1);
-      el.textContent=Math.round(target*(1-Math.pow(1-p,3)))+suf;
-      if(p<1) requestAnimationFrame(tick);
-    })(t0);
-    nio.unobserve(el);
-  });
-},{threshold:.6});
+const nio=new IntersectionObserver(es=>{es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,target=+el.dataset.n,suf=el.dataset.suffix||'';if(!target){nio.unobserve(el);return;}const dur=1100,t0=performance.now();(function tick(t){const p=Math.min((t-t0)/dur,1);el.textContent=Math.round(target*(1-Math.pow(1-p,3)))+suf;if(p<1)requestAnimationFrame(tick);})(t0);nio.unobserve(el);});},{threshold:.6});
 document.querySelectorAll('.stat b[data-n]').forEach(el=>nio.observe(el));
 </script>
 </body>
