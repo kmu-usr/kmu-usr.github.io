@@ -75,6 +75,8 @@ img{max-width:100%;display:block}
 .hero h1 .mark{
   background:linear-gradient(transparent 68%,rgba(179,52,46,.18) 68%);
 }
+/* 專有名詞不斷行：CJK 換行只允許發生在語意單元之間 */
+.nb{white-space:nowrap;}
 .hero p.sub{
   font-size:clamp(16px,2.4vw,20px);
   color:var(--ink-soft);max-width:620px;margin-bottom:40px;
@@ -335,7 +337,7 @@ footer p{font-size:13px;color:#8a8378;letter-spacing:.1em;line-height:2;font-fam
 <nav class="topbar">
   <div class="wrap">
     <a class="brand" href="../index.html" aria-label="回首頁"><img src="../img/laonong.png" alt="永續荖濃"></a>
-    <a class="nav" href="../about/">計畫全貌 &rarr;</a>
+    <a class="nav" href="../about/index.html">計畫全貌 &rarr;</a>
   </div>
 </nav>
 
@@ -553,9 +555,9 @@ footer p{font-size:13px;color:#8a8378;letter-spacing:.1em;line-height:2;font-fam
       <img class="laonong" src="../img/laonong.png" alt="永續荖濃">
     </div>
     <p>永續荖濃人才培育與健康發展計畫（荖濃 USR）<br>
-    高雄醫學大學　口腔醫學院<br>
+    <span class="nb">高雄醫學大學</span>　<span class="nb">口腔醫學院</span><br>
     教育部大學社會責任實踐計畫（USR）第四期</p>
-    <p style="margin-top:18px"><a href="../about/" style="color:var(--seal);text-decoration:none;letter-spacing:.12em">了解計畫全貌 &rarr;</a></p>
+    <p style="margin-top:18px"><a href="../about/index.html" style="color:var(--seal);text-decoration:none;letter-spacing:.12em">了解計畫全貌 &rarr;</a></p>
   </div>
 </footer>
 

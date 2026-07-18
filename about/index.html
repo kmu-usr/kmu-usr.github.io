@@ -75,6 +75,8 @@ img{max-width:100%;display:block}
 .hero h1 .mark{
   background:linear-gradient(transparent 68%,rgba(179,52,46,.18) 68%);
 }
+/* 專有名詞不斷行：CJK 換行只允許發生在語意單元之間 */
+.nb{white-space:nowrap;}
 .hero p.sub{
   font-size:clamp(16px,2.4vw,20px);
   color:var(--ink-soft);max-width:620px;margin-bottom:40px;
@@ -383,7 +385,7 @@ footer p{font-size:13px;color:#8a8378;letter-spacing:.1em;line-height:2;font-fam
 <nav class="topbar">
   <div class="wrap">
     <a class="brand" href="../index.html" aria-label="永續荖濃"><img src="../img/laonong.png" alt="永續荖濃"></a>
-    <a class="nav" href="../partner/">企業合作方案 &rarr;</a>
+    <a class="nav" href="../partner/index.html">企業合作方案 &rarr;</a>
   </div>
 </nav>
 
@@ -391,7 +393,7 @@ footer p{font-size:13px;color:#8a8378;letter-spacing:.1em;line-height:2;font-fam
   <div class="wrap">
     <p class="tag">永續荖濃 USR</p>
     <h1>一所醫學大學，<br class="br-d">與六龜、桃源的孩子，<br><span class="mark">走了十年的路。</span></h1>
-    <p class="sub">教育部大學社會責任實踐計畫（USR）第四期．高雄醫學大學口腔醫學院</p>
+    <p class="sub"><span class="nb">教育部大學社會責任實踐計畫（USR）</span><span class="nb">第四期</span>．<span class="nb">高雄醫學大學</span><span class="nb">口腔醫學院</span></p>
     <figure class="hero-photo fade">
       <img src="../img/hero.jpg" alt="新發國小假日學堂課程結束後合影">
       <figcaption>新發國小假日學堂．課程結束後合影</figcaption>
@@ -433,7 +435,7 @@ footer p{font-size:13px;color:#8a8378;letter-spacing:.1em;line-height:2;font-fam
 
     <div class="axis" style="margin-top:40px">
       <p class="eyebrow" style="color:var(--ink)">主軸一</p>
-      <h2 style="font-size:clamp(22px,3.2vw,28px)">良善陪伴與多元發展</h2>
+      <h2 style="font-size:clamp(22px,3.2vw,28px)"><span class="nb">良善陪伴與多元探索</span></h2>
       <p class="lead">以假日學堂為核心，把陪伴延伸到音樂、課輔與校園連結，帶偏鄉的孩子把視野往外、往上帶。</p>
       <ul class="axis-list">
         <li><b>假日學堂</b>——週六科學探索課程，全計畫核心項目</li>
@@ -526,7 +528,7 @@ footer p{font-size:13px;color:#8a8378;letter-spacing:.1em;line-height:2;font-fam
     <h2>想更了解，或想一起做點什麼</h2>
     <p>無論是想深入認識這個計畫，或探詢合作的可能，都歡迎來信。</p>
     <a class="btn" href="mailto:r121076@kmu.edu.tw?subject=【荖濃USR】計畫洽詢">來信聯絡</a>
-    <a class="btn btn-ghost" href="../school/">假日學堂．學校合作</a>
+    <a class="btn btn-ghost" href="../school/index.html">假日學堂．學校合作</a>
     <p class="alt">或洽辦公室電話｜07-3121101 分機 2209 轉 57</p>
   </div>
 </section>
@@ -539,7 +541,7 @@ footer p{font-size:13px;color:#8a8378;letter-spacing:.1em;line-height:2;font-fam
       <img class="laonong" src="../img/laonong.png" alt="永續荖濃">
     </div>
     <p>永續荖濃人才培育與健康發展計畫（荖濃 USR）<br>
-    高雄醫學大學　口腔醫學院<br>
+    <span class="nb">高雄醫學大學</span>　<span class="nb">口腔醫學院</span><br>
     教育部大學社會責任實踐計畫（USR）第四期</p>
   </div>
 </footer>
