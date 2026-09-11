@@ -3,8 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>假日學堂．學校合作｜永續荖濃 USR</title>
+<title>假日學堂．學校合作｜永續荖濃USR</title>
 <meta name="description" content="假日學堂——高雄醫學大學學生設計的週六科學探索課程。試辦不綁約，貴校只需做三件事。">
+<link rel="canonical" href="https://kmu-usr.github.io/school/">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../favicon-180.png">
+<meta name="theme-color" content="#FAF7F2">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="永續荖濃USR">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:url" content="https://kmu-usr.github.io/school/">
+<meta property="og:title" content="假日學堂．學校合作｜永續荖濃USR">
+<meta property="og:description" content="假日學堂——高雄醫學大學學生設計的週六科學探索課程。試辦不綁約，貴校只需做三件事。">
+<meta property="og:image" content="https://kmu-usr.github.io/img/school-class.jpg">
+<meta property="og:image:width" content="1040">
+<meta property="og:image:height" content="780">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
@@ -46,7 +60,7 @@ h2::after{
 @media(max-width:640px){.br-d{display:none}}
 .red{color:var(--seal)}
 .center{text-align:center}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 
 /* ---------- Hero ---------- */
 .hero{
@@ -86,11 +100,11 @@ img{max-width:100%;display:block}
   box-shadow:0 20px 60px -30px rgba(26,26,26,.35);
 }
 .hero-photo figcaption{
-  font-size:13px;color:#8a8378;padding:10px 4px;letter-spacing:.06em;
+  font-size:13px;color:#6b6459;padding:10px 4px;letter-spacing:.06em;
   font-family:'Noto Sans TC',sans-serif;
 }
 .scroll-hint{
-  margin-top:44px;font-size:13px;letter-spacing:.3em;color:#a09a8e;
+  margin-top:44px;font-size:13px;letter-spacing:.3em;color:#756e63;
   font-family:'Noto Sans TC',sans-serif;
 }
 
@@ -159,7 +173,7 @@ img{max-width:100%;display:block}
   border:1px solid var(--line);
 }
 .story-photo figcaption{
-  font-size:13px;color:#8a8378;padding:10px 4px;
+  font-size:13px;color:#6b6459;padding:10px 4px;
   font-family:'Noto Sans TC',sans-serif;letter-spacing:.06em;text-align:center;
 }
 
@@ -230,7 +244,7 @@ img{max-width:100%;display:block}
 }
 .card .mod-id{
   font-family:'Noto Sans TC',sans-serif;font-size:13px;letter-spacing:.25em;
-  color:#a09a8e;margin-bottom:8px;
+  color:#756e63;margin-bottom:8px;
 }
 .card h3{font-size:21px;letter-spacing:.05em;margin-bottom:6px}
 .card .price{
@@ -319,11 +333,12 @@ footer .divider{width:1px;height:52px;background:var(--line)}
   footer .logo-row{flex-direction:column;gap:18px}
   footer .divider{width:52px;height:1px}
 }
-footer p{font-size:13px;color:#8a8378;letter-spacing:.1em;line-height:2;font-family:'Noto Sans TC',sans-serif}
+footer p{font-size:13px;color:#6b6459;letter-spacing:.1em;line-height:2;font-family:'Noto Sans TC',sans-serif}
 
 /* ---------- 進場動畫 ---------- */
 .fade{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
 .fade.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.fade{opacity:1;transform:none;transition:none}}
 
 .topbar{position:sticky;top:0;z-index:50;background:rgba(250,247,242,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 24px}
@@ -340,7 +355,7 @@ footer p{font-size:13px;color:#8a8378;letter-spacing:.1em;line-height:2;font-fam
 .pair{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:34px}
 .pair figure{border:1px solid var(--line);background:#fff}
 .pair img{width:100%;aspect-ratio:4/3;object-fit:cover}
-.pair figcaption{font-family:'Noto Sans TC',sans-serif;font-size:12px;color:#8a8378;padding:8px 10px}
+.pair figcaption{font-family:'Noto Sans TC',sans-serif;font-size:12px;color:#6b6459;padding:8px 10px}
 .faq{margin-top:30px}
 .faq dt{font-weight:700;font-size:16px;margin-top:22px}
 .faq dd{margin:8px 0 0;font-size:15px;color:var(--ink-soft);line-height:1.95}
@@ -349,12 +364,13 @@ footer p{font-size:13px;color:#8a8378;letter-spacing:.1em;line-height:2;font-fam
 @media(max-width:720px){.three-things{grid-template-columns:1fr}.pair{grid-template-columns:1fr}}
 
 </style>
+<noscript><style>.fade{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
 
 <nav class="topbar">
   <div class="wrap">
-    <a class="brand" href="../index.html" aria-label="回首頁"><img src="../img/laonong.png" alt="永續荖濃"></a>
+    <a class="brand" href="../index.html" aria-label="回首頁"><img src="../img/laonong.png" alt="永續荖濃" width="420" height="355"></a>
     <a class="nav" href="../about/index.html">計畫全貌 &rarr;</a>
   </div>
 </nav>
@@ -365,7 +381,7 @@ footer p{font-size:13px;color:#8a8378;letter-spacing:.1em;line-height:2;font-fam
     <h1>想帶一群大學生，<br>去貴校陪孩子<span class="mark">過一個週六。</span></h1>
     <p class="sub">週六科學探索課程．試辦合作說明（適用國民小學）</p>
     <figure class="hero-photo fade">
-      <img src="../img/school-class.jpg" alt="假日學堂課堂互動">
+      <img src="../img/school-class.jpg" alt="假日學堂課堂互動" width="1040" height="780">
       <figcaption>新發國小假日學堂．課堂互動</figcaption>
     </figure>
   </div>
@@ -375,11 +391,11 @@ footer p{font-size:13px;color:#8a8378;letter-spacing:.1em;line-height:2;font-fam
   <div class="wrap">
     <p class="eyebrow">這是什麼</p>
     <h2>不是補習班，也不是課輔</h2>
-    <p class="lead" style="margin-top:20px">假日學堂是由高雄醫學大學學生自行設計的週六科學探索課程，以「邏輯與科學」「醫學與健康」為兩大主題，並不定期開設 AIGC 創意課程與健康體適能活動。目的是發展興趣與探索的動力，不是在週末多加一堂學科課。</p>
-    <p class="lead">課程自 112 年起於六龜地區辦理，現行合作學校為龍興國小與新發國小，兩校各兩班、合計四班，每學期服務約四十位學童。每班由 4–6 位受訓大學生帶領約 10 位學童，另有計畫專任人員全程在場。</p>
+    <p class="lead" style="margin-top:20px">假日學堂是由高雄醫學大學學生自行設計的週六科學探索課程，以「邏輯與科學」「醫學與健康」為兩大主題，並不定期開設AIGC創意課程與健康體適能活動。目的是發展興趣與探索的動力，不是在週末多加一堂學科課。</p>
+    <p class="lead">課程自112年起於六龜地區辦理，現行合作學校為龍興國小與新發國小，兩校各兩班、合計四班，每學期服務約四十位學童。每班由4–6位受訓大學生帶領約10位學童，另有計畫專任人員全程在場。</p>
     <div class="pair">
-      <figure class="fade"><img src="../img/school-sci.jpg" alt="科學實驗課程"><figcaption>邏輯與科學．課程實作</figcaption></figure>
-      <figure class="fade"><img src="../img/school-fit.jpg" alt="健康體適能活動"><figcaption>健康體適能．課程合影</figcaption></figure>
+      <figure class="fade"><img src="../img/school-sci.jpg" alt="科學實驗課程" width="1400" height="1050" loading="lazy" decoding="async"><figcaption>邏輯與科學．課程實作</figcaption></figure>
+      <figure class="fade"><img src="../img/school-fit.jpg" alt="健康體適能活動" width="1040" height="780" loading="lazy" decoding="async"><figcaption>健康體適能．課程合影</figcaption></figure>
     </div>
   </div>
 </section>
@@ -390,7 +406,7 @@ footer p{font-size:13px;color:#8a8378;letter-spacing:.1em;line-height:2;font-fam
     <h2>貴校只需做三件事</h2>
     <div class="three-things">
       <div class="tt fade"><p class="num">其一</p><h3>提供場地</h3><p>一間普通教室與可活動的戶外空間即可，設備從來不是關鍵。</p></div>
-      <div class="tt fade"><p class="num">其二</p><h3>協助招生</h3><p>發放報名表與家長同意書；6 人即可成班，依人數彈性分班。</p></div>
+      <div class="tt fade"><p class="num">其二</p><h3>協助招生</h3><p>發放報名表與家長同意書；6人即可成班，依人數彈性分班。</p></div>
       <div class="tt fade"><p class="num">其三</p><h3>一位隨班老師</h3><p>協助秩序與在地聯繫；課程與教材全由本計畫準備。</p></div>
     </div>
     <div class="notice fade">
@@ -409,13 +425,13 @@ footer p{font-size:13px;color:#8a8378;letter-spacing:.1em;line-height:2;font-fam
       <dt>需要學校出錢嗎？</dt>
       <dd>不需要。課程、教材、師資與行政均由本計畫負擔；相關行政細節於會談時完整說明。</dd>
       <dt>課程會不會太難或太簡單？</dt>
-      <dd>課程依年段與人數彈性分班，內容以動手實作為主，由受過「STEAM 創新培育」課程訓練的大學生授課，並依各校回饋滾動調整。</dd>
+      <dd>課程依年段與人數彈性分班，內容以動手實作為主，由受過「STEAM創新培育」課程訓練的大學生授課，並依各校回饋滾動調整。</dd>
       <dt>活動結束後學校會拿到什麼？</dt>
       <dd>結業證書、活動照片、學童心得與教師回饋彙整，完整交付貴校留存。</dd>
     </dl>
     <div class="pair">
-      <figure class="fade"><img src="../img/school-game.jpg" alt="口腔保健桌遊"><figcaption>計畫自製教具．口腔保健桌遊</figcaption></figure>
-      <figure class="fade"><img src="../img/school-teacher.jpg" alt="與合作學校教師合影"><figcaption>學堂講師與合作學校師長合影</figcaption></figure>
+      <figure class="fade"><img src="../img/school-game.jpg" alt="口腔保健桌遊" width="1040" height="780" loading="lazy" decoding="async"><figcaption>計畫自製教具．口腔保健桌遊</figcaption></figure>
+      <figure class="fade"><img src="../img/school-teacher.jpg" alt="與合作學校教師合影" width="1040" height="780" loading="lazy" decoding="async"><figcaption>學堂講師與合作學校師長合影</figcaption></figure>
     </div>
   </div>
 </section>
@@ -425,18 +441,18 @@ footer p{font-size:13px;color:#8a8378;letter-spacing:.1em;line-height:2;font-fam
     <h2>談一次，就知道合不合適</h2>
     <p>歡迎來信，我們將提供完整合作說明書，並依貴校時間安排拜訪。</p>
     <a class="btn" href="mailto:r121076@kmu.edu.tw?subject=【假日學堂】學校合作洽詢">來信洽詢</a>
-    <p class="alt">或洽辦公室電話｜07-3121101 分機 2209 轉 57</p>
+    <p class="alt">或洽辦公室電話｜07-3121101分機2209轉57</p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
     <div class="logo-row">
-      <img class="kmu" src="../img/kmu.png" alt="高雄醫學大學">
+      <img class="kmu" src="../img/kmu.png" alt="高雄醫學大學" width="600" height="95" loading="lazy" decoding="async">
       <span class="divider"></span>
-      <img class="laonong" src="../img/laonong.png" alt="永續荖濃">
+      <img class="laonong" src="../img/laonong.png" alt="永續荖濃" width="420" height="355" loading="lazy" decoding="async">
     </div>
-    <p>永續荖濃人才培育與健康發展計畫（荖濃 USR）<br>
+    <p>永續荖濃人才培育與健康發展計畫（荖濃USR）<br>
     <span class="nb">高雄醫學大學</span>　<span class="nb">口腔醫學院</span><br>
     教育部大學社會責任實踐計畫（USR）第四期</p>
   </div>
