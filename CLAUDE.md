@@ -49,3 +49,13 @@
 - 上層 `~/Projects/CLAUDE.md` 之通用規則(繁體中文回覆、刪除前先詢問等)適用於本目錄。
 - **檔名版本制(`名稱_v版本號_日期`)不適用於本目錄之網站檔案**——網站檔名由 HTML 結構決定,
   版本以 D 檔所載之網站版號(現為 v10)管理。
+
+## 五、分支、測試頁與機器檢查（裁定 Q11-甲，2026-09-12）
+
+- **修改一律先開分支**（如 `v11-draft`），不直接動 `main`；**不合併、不推送**，推送 `main` 須另經使用者明示同意，
+  同意後以 `ALLOW_MAIN_PUSH=1 git push` 執行（`.githooks/pre-push` 會擋未帶此變數之 main 推送；各裝置先 `git config core.hooksPath .githooks`）。
+- **測試頁**：本機預覽伺服器（laonong-usr 之 `.claude/launch.json` 設定 `laonong-website-preview`，port 8765），
+  或由 Claude 將分支快照發佈為**私有 Artifact** 供多裝置檢視。
+- **紅線 lint** `node scripts/check-redlines.mjs`：排版新制、`img/` 對照 G 檔第十節、N13 手機號、禁用字串、相對時間警告、head 必備欄位；
+  Stop hook（`.claude/hooks/stop-check.mjs`，Node 平台中立）與 pre-push 均會執行。lint 只抓字串層級，N10、N17 等仍依 H 檔 Pass 1／2 人工檢核。
+- 定稿後程序：使用者同意 → merge `main` 並 push → `curl` 比對線上雜湊 → 回寫 laonong-usr 之 D 檔、A 檔第五節與決策紀錄。

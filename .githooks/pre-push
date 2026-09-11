@@ -1,0 +1,13 @@
+#!/bin/sh
+# pre-push（裁定 Q11-甲 (c)）：推 main 即對外發布，須使用者明示同意——以環境變數 ALLOW_MAIN_PUSH=1 表示已同意；並先跑紅線 lint。
+# 啟用：git config core.hooksPath .githooks（本機設定，各裝置各設一次）。
+while read local_ref local_sha remote_ref remote_sha; do
+  case "$remote_ref" in
+    refs/heads/main)
+      if [ "$ALLOW_MAIN_PUSH" != "1" ]; then
+        echo "[pre-push] 拒絕推送 main：推送即上線，須使用者明示同意後以 ALLOW_MAIN_PUSH=1 git push 執行。"; exit 1
+      fi ;;
+  esac
+done
+node scripts/check-redlines.mjs || { echo "[pre-push] 紅線 lint 未通過，推送中止。"; exit 1; }
+exit 0
