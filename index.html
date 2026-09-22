@@ -349,21 +349,44 @@ footer .flinks{margin-top:14px}footer .flinks a{color:#6b6459;text-decoration:no
 .intro-text p:last-child{margin-bottom:0}
 .intro .hero-photo{margin-top:0}
 @media(max-width:760px){.intro-grid{grid-template-columns:1fr;gap:28px}.intro{padding-bottom:56px}}
-.path{padding:40px 0 8px}
-.path-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px}
-.path .eyebrow{font-family:'Noto Sans TC',sans-serif;font-size:13px;letter-spacing:.32em;color:var(--seal);font-weight:700;margin-bottom:0}
-.path-more{font-family:'Noto Sans TC',sans-serif;font-size:13.5px;letter-spacing:.14em;color:var(--seal);text-decoration:none;white-space:nowrap}
-.path-more:hover{text-decoration:underline;text-underline-offset:4px}
-.path-line{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:22px;position:relative}
-.path-line::before{content:"";position:absolute;left:0;right:0;top:7px;height:2px;background:var(--line)}
-.path-line li{position:relative;padding:22px 14px 0 0}
-.path-line li::before{content:"";position:absolute;left:0;top:1px;width:14px;height:14px;border-radius:50%;background:var(--paper);border:3px solid var(--seal);box-sizing:border-box}
-.path-line li.now::before{background:var(--seal)}
-.path-line li.future::before{border-color:#b9b2a5}
-.path-line b{display:block;font-family:'Noto Sans TC',sans-serif;font-size:14px;letter-spacing:.06em;color:var(--seal)}
-.path-line li.future b{color:#756e63}
-.path-line span{font-size:13.5px;color:var(--ink-soft);letter-spacing:.03em;line-height:1.7;display:block}
-@media(max-width:720px){.path-line{grid-template-columns:1fr;gap:0}.path-line::before{left:6px;right:auto;top:0;bottom:0;width:2px;height:auto}.path-line li{padding:0 0 16px 28px}.path-line li::before{top:6px}}
+.history{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.history .eyebrow{font-family:'Noto Sans TC',sans-serif;font-size:13px;letter-spacing:.32em;color:var(--seal);font-weight:700;margin-bottom:14px}
+.tl{list-style:none;border-left:3px solid var(--seal);margin:12px 0 0 12px;padding-left:34px}
+.tl li{position:relative;padding-bottom:26px}
+.tl li::before{content:"";position:absolute;left:-43px;top:12px;width:13px;height:13px;border-radius:50%;background:#fff;border:3px solid var(--seal)}
+.tl li.future::before{border-color:#b9b2a5}
+.tl .yr{font-family:'Noto Sans TC',sans-serif;font-weight:700;color:var(--seal);letter-spacing:.06em;font-size:15px}
+.tl li.future .yr{color:#756e63}
+.tl h3{font-size:19px;letter-spacing:.06em;margin:2px 0 6px}
+.tl p{color:var(--ink-soft);font-size:15.5px}
+.fold{border:1px solid var(--line);background:var(--paper);margin-top:16px}
+.fold summary{list-style:none;cursor:pointer;padding:18px 22px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.fold summary::-webkit-details-marker{display:none}
+.fold summary::before{content:"▸";color:var(--seal);font-family:'Noto Sans TC',sans-serif;transition:transform .2s}
+.fold[open] summary::before{transform:rotate(90deg)}
+.fold-title{font-weight:700;letter-spacing:.06em;font-size:17px}
+.fold-sub{font-family:'Noto Sans TC',sans-serif;font-size:13px;color:#756e63;letter-spacing:.04em}
+.fold-body{padding:4px 22px 24px}
+.fold-note{font-size:13.5px;color:#6b6459;margin-bottom:14px;font-family:'Noto Sans TC',sans-serif}
+.axes-tbl{width:100%;border-collapse:collapse;font-size:14.5px;font-family:'Noto Sans TC',sans-serif}
+.axes-tbl th,.axes-tbl td{border:1px solid var(--line);padding:12px 14px;text-align:left;vertical-align:top;line-height:1.7;background:#fff}
+.axes-tbl th{font-weight:700;letter-spacing:.06em;background:var(--paper)}
+.axes-tbl td.now{font-weight:700}
+.sem{display:grid;grid-template-columns:150px 1fr;gap:0 24px;border-top:1px solid var(--line);padding:18px 0}
+.sem .k{font-family:'Noto Sans TC',sans-serif;font-weight:700;letter-spacing:.06em;color:var(--seal)}
+.sem .k small{display:block;font-weight:400;color:#6b6459;font-size:12.5px;letter-spacing:.04em}
+.sem ul{list-style:none;color:var(--ink-soft);font-size:15px}
+.sem li{padding-left:1.2em;text-indent:-1.2em}
+.sem li::before{content:"・"}
+.mile{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:6px}
+.mile .m{border:1px solid var(--line);background:var(--paper);padding:22px 24px}
+.mile .m h3{font-size:17px;letter-spacing:.06em;margin-bottom:8px}
+.mile .m p{font-size:15px;color:var(--ink-soft)}
+.mile a{color:var(--seal)}
+.ext{margin-top:26px;font-size:15.5px}
+.ext a{color:var(--seal);text-decoration:underline;text-underline-offset:4px}
+.src-note{margin-top:18px;font-size:13px;color:#6b6459;letter-spacing:.04em;line-height:1.9}
+@media(max-width:640px){.sem{grid-template-columns:1fr;gap:6px}.mile{grid-template-columns:1fr}.axes-tbl{font-size:13px}.axes-tbl th,.axes-tbl td{padding:9px 8px}.fold summary{padding:14px 16px}.fold-body{padding:4px 16px 18px}}
 .gw-main{display:block;text-decoration:none;color:inherit}
 .gw-links{display:flex;gap:18px;padding-top:0!important;margin-top:-8px}
 .gw-links .go{margin-top:0;text-decoration:none}
@@ -401,7 +424,7 @@ footer .flinks{margin-top:14px}footer .flinks a{color:#6b6459;text-decoration:no
         <p class="eyebrow">關於這條路</p>
         <p>永續荖濃人才培育與健康發展計畫，是高雄醫學大學在六龜、桃源——荖濃溪沿線——長期推動的大學社會責任實踐計畫。</p>
         <p>我們把醫學大學的專業，轉譯成社區聽得懂的語言帶進場域：週六的假日學堂、幼兒發展評估、社區口腔衛教與健康講座。大學生則在服務的過程中，學會溝通與同理，看見自己的專業在社會中的位置；場域的孩子，則透過科普課程與藝文活動，看見自己的可能。</p>
-        <p>這條路自104年起一路同行，如今走到第四期。下面的數字與歷程，是這段路的紀錄。</p>
+        <p>這條路自104年起一路同行，如今走到第四期。下面的數字，與頁末的<a href="#history" style="color:var(--seal);text-decoration:underline;text-underline-offset:4px">計畫歷程</a>，是這段路的紀錄。</p>
       </div>
       <figure class="hero-photo fade">
         <img src="img/hero.jpg" alt="新發國小假日學堂課程結束後合影" width="1400" height="1050">
@@ -423,22 +446,6 @@ footer .flinks{margin-top:14px}footer .flinks a{color:#6b6459;text-decoration:no
   </div>
 </section>
 
-<section class="path">
-  <div class="wrap">
-    <div class="path-head">
-      <p class="eyebrow">計畫歷程</p>
-      <a class="path-more" href="history/index.html">完整歷程 &rarr;</a>
-    </div>
-    <ol class="path-line">
-      <li class="fade"><b>104年起</b><span>高醫師生進入六龜、桃源</span></li>
-      <li class="fade"><b>109年</b><span>USR-HUB種子計畫</span></li>
-      <li class="fade"><b>112年</b><span>第三期．萌芽型</span></li>
-      <li class="fade now"><b>114年</b><span>第四期．萌芽型（現行）</span></li>
-      <li class="fade future"><b>117年起</b><span>第五期．規劃中</span></li>
-    </ol>
-  </div>
-</section>
-
 <section class="gateway">
   <div class="wrap">
     <h2>您想從哪裡開始？</h2>
@@ -452,7 +459,7 @@ footer .flinks{margin-top:14px}footer .flinks a{color:#6b6459;text-decoration:no
             <p>兩大核心宗旨、三大主軸，以及自104年起走出的在地網絡——從這裡認識永續荖濃。</p>
           </div>
         </a>
-        <div class="body gw-links"><a class="go" href="about/index.html">了解全貌 &rarr;</a><a class="go sub" href="history/index.html">計畫歷程 &rarr;</a></div>
+        <div class="body gw-links"><a class="go" href="about/index.html">了解全貌 &rarr;</a><a class="go sub" href="#history">計畫歷程 &rarr;</a></div>
       </div>
       <a class="gw fade" href="partner/index.html">
         <img src="img/gw-partner.jpg" alt="2025 USR EXPO成果展出" width="1400" height="1054" loading="lazy" decoding="async">
@@ -476,6 +483,92 @@ footer .flinks{margin-top:14px}footer .flinks a{color:#6b6459;text-decoration:no
   </div>
 </section>
 
+<section class="history" id="history">
+  <div class="wrap">
+    <p class="eyebrow">計畫歷程</p>
+    <h2>從台27線出發，一段接續的路</h2>
+    <p class="lead" style="margin-top:20px">期別沿革、主軸架構演進，與112學年度起各學期的活動紀事；依計畫書、各年度成果報告書與高教深耕計畫網站活動紀錄整理。</p>
+
+    <ol class="tl">
+      <li class="fade"><span class="yr">104年起</span><h3>高醫師生進入六龜、桃源</h3><p>以醫療服務與口腔衛教進入荖濃溪沿線場域，開始在地服務。</p></li>
+      <li class="fade"><span class="yr">109年</span><h3>USR-HUB種子計畫</h3><p>「翻轉台27線人才培育與健康照護計畫」，以健康照護與人才培育兩大面向推動。</p></li>
+      <li class="fade"><span class="yr">112年</span><h3>第三期（112–113年）｜萌芽型</h3><p>自種子計畫進階為教育部大學社會責任實踐計畫萌芽型，計畫名稱「永續荖濃人才培育與健康發展計畫」自此沿用；以四大主軸推動。假日學堂於112學年度上學期開始運作。</p></li>
+      <li class="fade"><span class="yr">114年</span><h3>第四期（114–116年）｜萌芽型（現行）</h3><p>延續計畫名稱與場域；115年修正計畫書將四大主軸整併為現行三主軸。</p></li>
+      <li class="fade future"><span class="yr">117年起</span><h3>第五期｜規劃中</h3><p>依教育部規定，第五期將以深耕型計畫申請；內容規劃中。</p></li>
+    </ol>
+
+    <details class="fold fade">
+      <summary><span class="fold-title">主軸架構演進</span><span class="fold-sub">三代架構，同一條路（點開對照）</span></summary>
+      <div class="fold-body">
+        <p class="fold-note">各期主軸名稱依當期計畫書與成果報告書記載；現行名稱以115年修正計畫書為準。</p>
+        <table class="axes-tbl">
+          <thead><tr><th>第三期（112–113年）</th><th>第四期原架構（114年）</th><th>現行（115年修正後）</th></tr></thead>
+          <tbody>
+            <tr><td>人才培育</td><td>良善陪伴與促進多元發展</td><td class="now" rowspan="2">主軸一　良善陪伴與多元探索</td></tr>
+            <tr><td>六龜假日學堂—札根在地科學教育與學童健康生活</td><td>札根科學教育與探索無限可能—假日學堂</td></tr>
+            <tr><td>口腔健康、體適能及兒童發展評估後送機制</td><td>校園與社區健康促進</td><td class="now">主軸二　校園與社區健康促進</td></tr>
+            <tr><td>提升醫學大學生醫療服務暨社會貢獻</td><td>醫學人文與永續服務</td><td class="now">主軸三　醫學人文與永續服務</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+
+    <details class="fold fade">
+      <summary><span class="fold-title">各學期紀事</span><span class="fold-sub">112學年度起，每一學期的代表活動與場域（點開）</span></summary>
+      <div class="fold-body">
+        <p class="fold-note">所列為各學期的代表活動與場域，依高教深耕計畫網站之活動紀錄整理；不含場次與人數統計。合作學校名單為各學期當時之紀錄。</p>
+        <div class="sem"><div class="k">112學年度上學期<small>2023年8月–2024年1月</small></div><ul>
+          <li>假日學堂於六龜國小開辦，開始週六科學探索課程</li>
+          <li>醫學科普種子教師培訓先導課程四場（校內）</li>
+          <li>六龜高中社區家庭日合作</li>
+        </ul></div>
+        <div class="sem"><div class="k">112學年度下學期<small>2024年2月–7月</small></div><ul>
+          <li>假日學堂擴至六龜關懷協會，兩地同時開課</li>
+          <li>幼兒發展評估首輪：建山國小、寶來國小、興中國小附設幼兒園</li>
+          <li>心路基金會六龜日間服務據點口腔衛教（口腔護衛隊）</li>
+          <li>新發國小健康議題教師研習</li>
+          <li>尼布恩合唱團赴美東交流</li>
+        </ul></div>
+        <div class="sem"><div class="k">113學年度上學期<small>2024年8月–2025年1月</small></div><ul>
+          <li>假日學堂改於龍興國小、六龜國小兩校辦理</li>
+          <li>寶來社區保健食品與慢性處方藥物講座</li>
+          <li>STEAM創新培育博雅課程場域參訪</li>
+          <li>寶來音樂營（高醫聲樂社與寶來國中）</li>
+        </ul></div>
+        <div class="sem"><div class="k">113學年度下學期<small>2025年2月–7月</small></div><ul>
+          <li>假日學堂於龍興、新發、六龜三校辦理</li>
+          <li>幼兒發展評估與促進：寶來、興中、建山</li>
+          <li>心路據點與巷弄長照站中高齡者衛教訪視</li>
+          <li>龍興國小八校聯合運動會健康篩檢</li>
+          <li>六龜高中AI輔助學習講座</li>
+        </ul></div>
+        <div class="sem"><div class="k">114學年度上學期<small>2025年8月–2026年1月</small></div><ul>
+          <li>假日學堂於龍興、新發、六龜三校辦理</li>
+          <li>幼兒發展評估：建山、興中</li>
+          <li>社區牙醫科實習擴至中興社區</li>
+          <li>用藥安全講座（寶來、六龜社區）、居家健體講座（新威）</li>
+          <li>龍興國小校慶口腔檢查與衛教</li>
+          <li>新發、龍興國小師生至高醫參訪；荖濃茶文化走讀</li>
+        </ul></div>
+        <div class="sem"><div class="k">114學年度下學期<small>2026年2月–7月</small></div><ul>
+          <li>假日學堂於龍興、新發兩校辦理</li>
+          <li>幼兒發展評估：建山、興中、龍興</li>
+          <li>社區牙醫科實習：文武、新開社區與心路據點</li>
+          <li>居家健體講座（新威）</li>
+        </ul></div>
+      </div>
+    </details>
+
+    <p class="eyebrow" style="margin-top:56px">研究里程碑</p>
+    <div class="mile">
+      <div class="m fade"><h3>114年度</h3><p>「參與USR計畫對大學生幸福感與生命態度之影響」通過人體研究倫理審查，並完成參與假日學堂大學生之前導研究。</p></div>
+      <div class="m fade"><h3>115年度</h3><p>完成假日學堂服務學習出隊之階段性效益評估（配對對照組設計）。結果摘要見<a href="partner/index.html">企業合作頁「大學生端成效」</a>。</p></div>
+    </div>
+    <p class="ext">各場活動的完整紀錄，見高雄醫學大學高等教育深耕計畫網站<a href="https://hesp.kmu.edu.tw/index.php/執行成果/114-116年-第二期計畫-第二階段/114-116附冊usr計畫成果/114-116附冊：永續荖濃成果" target="_blank" rel="noopener">「附冊：永續荖濃」專區</a>（112–113年之紀錄亦收錄於該站）。</p>
+    <p class="src-note">本節事項依高教深耕計畫網站活動紀錄、各年度成果報告書與計畫書整理；所列為活動事實與場域，不作成效表述。</p>
+  </div>
+</section>
+
 <section class="cta">
   <div class="wrap">
     <h2>想更了解，或想一起做點什麼</h2>
@@ -495,7 +588,7 @@ footer .flinks{margin-top:14px}footer .flinks a{color:#6b6459;text-decoration:no
     <p>永續荖濃人才培育與健康發展計畫（荖濃USR）<br>
     <span class="nb">高雄醫學大學</span>　<span class="nb">口腔醫學院</span><br>
     教育部大學社會責任實踐計畫（USR）第四期</p>
-    <p class="flinks"><a href="about/index.html">計畫全貌</a>｜<a href="history/index.html">計畫歷程</a>｜<a href="partner/index.html">企業合作</a>｜<a href="school/index.html">學校合作</a></p>
+    <p class="flinks"><a href="about/index.html">計畫全貌</a>｜<a href="#history">計畫歷程</a>｜<a href="partner/index.html">企業合作</a>｜<a href="school/index.html">學校合作</a></p>
   </div>
 </footer>
 

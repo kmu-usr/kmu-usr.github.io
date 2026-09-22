@@ -7,8 +7,8 @@ import path from 'node:path';
 import os from 'node:os';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
-const PAGES = ['index.html', 'about/index.html', 'partner/index.html', 'school/index.html', 'history/index.html', '404.html'];
-// 歷程頁架構演進表：各期主軸名依當期名稱（裁定 Q13-甲 7-甲，N1 歷史脈絡），僅 history 頁、僅整格完全相符者放行
+const PAGES = ['index.html', 'about/index.html', 'partner/index.html', 'school/index.html', '404.html'];
+// 首頁計畫歷程之架構演進表：各期主軸名依當期名稱（裁定 Q13-甲 7-甲、戊-2，N1 歷史脈絡），僅首頁、僅整格完全相符者放行
 const HIST_AXIS = new Set(['良善陪伴與促進多元發展']);
 const CJK = '[　-〿㐀-䶿一-鿿！-｠—…]';
 const SP1 = new RegExp(`${CJK} +[A-Za-z0-9]`);
@@ -31,7 +31,7 @@ for (const rel of PAGES) {
   const html = fs.readFileSync(f, 'utf8');
   for (const t of textOf(html)) {
     if (SP1.test(t) || SP2.test(t)) fails.push(`${rel}: 中英（數）之間有空格 → ${t.slice(0, 60)}`);
-    for (const w of FORBID) if (t.includes(w) && !(rel === 'history/index.html' && HIST_AXIS.has(t))) fails.push(`${rel}: 禁用字串「${w}」 → ${t.slice(0, 60)}`);
+    for (const w of FORBID) if (t.includes(w) && !(rel === 'index.html' && HIST_AXIS.has(t))) fails.push(`${rel}: 禁用字串「${w}」 → ${t.slice(0, 60)}`);
     for (const w of RELTIME) if (t.includes(w) && !t.includes('十餘年')) warns.push(`${rel}: 相對時間表述「${w}」請確認（A 檔第六節 C 類） → ${t.slice(0, 60)}`);
     if (PHONE.test(t)) fails.push(`${rel}: 疑似個人手機號碼（N13） → ${t.slice(0, 60)}`);
   }
