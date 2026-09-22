@@ -271,6 +271,10 @@ img{max-width:100%;height:auto;display:block}
 }
 .gain h3{font-size:18px;letter-spacing:.08em;margin-bottom:10px}
 .gain p{font-size:14px;color:var(--ink-soft);line-height:1.9}
+.gain .evidence{margin-top:40px;padding:26px 28px;border:1px solid var(--line);border-left:4px solid var(--seal);background:var(--paper)}
+.gain .evidence h3{font-size:16px;letter-spacing:.06em;margin-bottom:12px}
+.gain .evidence p{text-align:left;margin-bottom:10px}
+.gain .evidence .src{font-size:12.5px;color:#756e63;margin-bottom:0}
 .gain .fund{
   margin-top:48px;text-align:center;
   font-size:15px;letter-spacing:.1em;
@@ -278,7 +282,7 @@ img{max-width:100%;height:auto;display:block}
   color:var(--ink-soft);
 }
 .gain .fund b{color:var(--ink)}
-@media(max-width:720px){.gain .cols{grid-template-columns:1fr;gap:40px}}
+@media(max-width:720px){.gain .cols{grid-template-columns:1fr;gap:40px}.gain .evidence{padding:20px 18px}}
 
 /* ---------- 公信力帶 ---------- */
 .trust{padding:60px 0}
@@ -519,9 +523,7 @@ footer p{font-size:13px;color:#6b6459;letter-spacing:.1em;line-height:2;font-fam
       <div class="col fade">
         <div class="glyph">數</div>
         <h3>ESG報告數據</h3>
-        <p>SDGs 3・4・10・17對接指標、IRB核准之量化研究成果（見下），完整SROI報告產出後提供。已累積之場域成效可佐證：心路基金會六龜據點學員經一年陪伴練習後多數掌握合格刷牙技巧，在地牙醫師觀察，過去需根管治療的嚴重齲齒如今多只需補牙即可處理。</p>
-        <p><b>大學生端成效</b>（IRB核准之量表追蹤研究，自113學年度下學期起）——114年度前導研究：參與假日學堂的本校學生（38人）於生活滿意、學業成長兩構面之前後測差異達統計顯著（配對t檢定，經多重比較校正；效果量d＝0.60、0.70），76.3%表示願意持續投入服務。115年度（114學年度下學期）階段性效益評估：以配對未參與學生為對照組（排除無效作答後，參與組30人、對照組50人；全樣本併陳於原報告），參與學生在人際關係、生活滿意、學業成就及整體幸福感的平均分數全數上升，70%整體幸福感提升；同期對照組各面向持平或下降，54%下滑。兩組進步比例相差34個百分點，組間效果量d＝0.52（中等）；經貝葉斯分析估計，參與組進步幅度大於對照組的機率為98.3%。</p>
-        <p class="note">來源：本計畫前導研究（114年度）與效益評估報告（115年度）。均為量表前後測設計，效益評估採配對抽樣對照組、非隨機分派；結果描述參與學生之變化，不作因果推論。</p>
+        <p>SDGs 3・4・10・17對接指標、IRB核准之量化研究成果（見下方「大學生端成效」），完整SROI報告產出後提供。已累積之場域成效可佐證：心路基金會六龜據點學員經一年陪伴練習後多數掌握合格刷牙技巧，在地牙醫師觀察，過去需根管治療的嚴重齲齒如今多只需補牙即可處理。</p>
       </div>
       <div class="col fade">
         <div class="glyph">名</div>
@@ -533,6 +535,12 @@ footer p{font-size:13px;color:#6b6459;letter-spacing:.1em;line-height:2;font-fam
         <h3>員工參與</h3>
         <p>一站式志工模組——同仁僅需出人，即產出具價值之志工時數與員工投入感。</p>
       </div>
+    </div>
+    <div class="evidence fade">
+      <h3>大學生端成效｜IRB核准之量表追蹤研究（自113學年度下學期起）</h3>
+      <p><b>114年度前導研究</b>：參與假日學堂的本校學生（38人）於生活滿意、學業成長兩構面之前後測差異達統計顯著（配對t檢定，經多重比較校正；效果量d＝0.60、0.70），76.3%表示願意持續投入服務。</p>
+      <p><b>115年度（114學年度下學期）階段性效益評估</b>：以配對未參與學生為對照組（排除無效作答後，參與組30人、對照組50人；全樣本併陳於原報告）。參與學生在人際關係、生活滿意、學業成就及整體幸福感的平均分數全數上升，70%整體幸福感提升；同期對照組各面向持平或下降，54%下滑。兩組進步比例相差34個百分點，組間效果量d＝0.52（中等）；經貝葉斯分析估計，參與組進步幅度大於對照組的機率為98.3%。</p>
+      <p class="src">來源：本計畫前導研究（114年度）與效益評估報告（115年度）。均為量表前後測設計，效益評估採配對抽樣對照組、非隨機分派；結果描述參與學生之變化，不作因果推論。</p>
     </div>
     <p class="fund">捐款納入<b>高雄醫學大學校務基金</b>，開立正式受贈收據、可依法列報捐贈支出，<b>專款專用</b>並提供年度成效報告。</p>
   </div>
