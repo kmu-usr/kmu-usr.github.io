@@ -412,9 +412,11 @@ footer .flinks{margin-top:14px}footer .flinks a{color:#6b6459;text-decoration:no
 .fx-side .big .vs{font-size:.45em;margin:0 8px;color:#b9b2a5;font-weight:400}
 .fx-side .big small{display:block;font-size:13.5px;font-weight:400;color:var(--ink-soft);letter-spacing:.08em;margin-top:6px}
 .fx-note{font-size:15px;color:var(--ink-soft)}
-.fx-why{margin-top:44px;padding-top:32px;border-top:1px solid var(--line);max-width:760px}
+.fx-why{margin-top:44px;padding-top:36px;border-top:1px solid var(--line);display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:center}
 .fx-why .eyebrow{margin-bottom:12px}
-.fx-why p:last-child{color:var(--ink-soft);font-size:16.5px;text-wrap:pretty}
+.fx-why-text p:last-child{color:var(--ink-soft);font-size:16.5px;text-wrap:pretty}
+.fx-why .hero-photo{margin-top:0}
+@media(max-width:760px){.fx-why{grid-template-columns:1fr;gap:24px}}
 .fx-note a{color:var(--seal);text-decoration:underline;text-underline-offset:4px}
 @media(max-width:760px){.fx-grid{grid-template-columns:1fr;gap:24px}.fx-side{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fx-note{grid-column:1/-1}}
 .gw-main{display:block;text-decoration:none;color:inherit}
@@ -536,8 +538,14 @@ footer .flinks{margin-top:14px}footer .flinks a{color:#6b6459;text-decoration:no
       </div>
     </div>
     <div class="fx-why fade">
-      <p class="eyebrow">為什麼我們在意大學生的改變</p>
-      <p>一位醫療從業者的溝通、同理與對社會的理解，很難只在教室裡養成。本計畫讓醫學大學的學生在真實的社區裡練習把專業說給人聽、看見資源不足時的處境，並在過程中被改變。我們相信，這樣的大學生，正是台灣未來優質醫療人才的樣子；場域得到服務，學生得到成長，兩者是同一件事。</p>
+      <div class="fx-why-text">
+        <p class="eyebrow">為什麼我們在意大學生的改變</p>
+        <p>一位醫療從業者的溝通、同理與對社會的理解，很難只在教室裡養成。本計畫讓醫學大學的學生在真實的社區裡練習把專業說給人聽、看見資源不足時的處境，並在過程中被改變。我們相信，這樣的大學生，正是台灣未來優質醫療人才的樣子；場域得到服務，學生得到成長，兩者是同一件事。</p>
+      </div>
+      <figure class="hero-photo">
+        <img src="img/partner-story.jpg" alt="假日學堂邏輯與科學課程，大學生志工與學童一起實作" width="1400" height="1050" loading="lazy" decoding="async">
+        <figcaption>龍興國小假日學堂．大學生志工與學童一起實作</figcaption>
+      </figure>
     </div>
   </div>
 </section>
