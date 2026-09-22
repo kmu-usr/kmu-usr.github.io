@@ -64,7 +64,7 @@ img{max-width:100%;height:auto;display:block}
 
 /* ---------- Hero ---------- */
 .hero{
-  min-height:92vh;
+  min-height:62vh;
   display:flex;flex-direction:column;justify-content:center;
   position:relative;
   padding:60px 0 80px;
@@ -342,6 +342,13 @@ footer .flinks{margin-top:14px}footer .flinks a{color:#6b6459;text-decoration:no
 .fade.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.fade{opacity:1;transform:none;transition:none}}
 
+.intro{padding:0 0 72px}
+.intro-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center}
+.intro .eyebrow{font-family:'Noto Sans TC',sans-serif;font-size:13px;letter-spacing:.32em;color:var(--seal);font-weight:700;margin-bottom:16px}
+.intro-text p{color:var(--ink-soft);font-size:16.5px;margin-bottom:16px;text-wrap:pretty}
+.intro-text p:last-child{margin-bottom:0}
+.intro .hero-photo{margin-top:0}
+@media(max-width:760px){.intro-grid{grid-template-columns:1fr;gap:28px}.intro{padding-bottom:56px}}
 .path{padding:40px 0 8px}
 .path-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px}
 .path .eyebrow{font-family:'Noto Sans TC',sans-serif;font-size:13px;letter-spacing:.32em;color:var(--seal);font-weight:700;margin-bottom:0}
@@ -386,6 +393,23 @@ footer .flinks{margin-top:14px}footer .flinks a{color:#6b6459;text-decoration:no
     <p class="sub">永續荖濃人才培育與健康發展計畫．教育部大學社會責任實踐計畫（USR）第四期</p>
   </div>
 </header>
+
+<section class="intro">
+  <div class="wrap">
+    <div class="intro-grid">
+      <div class="intro-text fade">
+        <p class="eyebrow">關於這條路</p>
+        <p>永續荖濃人才培育與健康發展計畫，是高雄醫學大學在六龜、桃源——荖濃溪沿線——長期推動的大學社會責任實踐計畫。</p>
+        <p>我們把醫學大學的專業，轉譯成社區聽得懂的語言帶進場域：週六的假日學堂、幼兒發展評估、社區口腔衛教與健康講座。大學生則在服務的過程中，學會溝通與同理，看見自己的專業在社會中的位置；場域的孩子，則透過科普課程與藝文活動，看見自己的可能。</p>
+        <p>這條路自104年起一路同行，如今走到第四期。下面的數字與歷程，是這段路的紀錄。</p>
+      </div>
+      <figure class="hero-photo fade">
+        <img src="img/hero.jpg" alt="新發國小假日學堂課程結束後合影" width="1400" height="1050">
+        <figcaption>新發國小假日學堂．課程結束後合影</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
 
 <section class="stats">
   <div class="wrap"><div class="grid">
