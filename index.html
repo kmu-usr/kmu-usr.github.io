@@ -342,6 +342,26 @@ footer .flinks{margin-top:14px}footer .flinks a{color:#6b6459;text-decoration:no
 .fade.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.fade{opacity:1;transform:none;transition:none}}
 
+.path{padding:40px 0 8px}
+.path-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px}
+.path .eyebrow{font-family:'Noto Sans TC',sans-serif;font-size:13px;letter-spacing:.32em;color:var(--seal);font-weight:700;margin-bottom:0}
+.path-more{font-family:'Noto Sans TC',sans-serif;font-size:13.5px;letter-spacing:.14em;color:var(--seal);text-decoration:none;white-space:nowrap}
+.path-more:hover{text-decoration:underline;text-underline-offset:4px}
+.path-line{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:22px;position:relative}
+.path-line::before{content:"";position:absolute;left:0;right:0;top:7px;height:2px;background:var(--line)}
+.path-line li{position:relative;padding:22px 14px 0 0}
+.path-line li::before{content:"";position:absolute;left:0;top:1px;width:14px;height:14px;border-radius:50%;background:var(--paper);border:3px solid var(--seal);box-sizing:border-box}
+.path-line li.now::before{background:var(--seal)}
+.path-line li.future::before{border-color:#b9b2a5}
+.path-line b{display:block;font-family:'Noto Sans TC',sans-serif;font-size:14px;letter-spacing:.06em;color:var(--seal)}
+.path-line li.future b{color:#756e63}
+.path-line span{font-size:13.5px;color:var(--ink-soft);letter-spacing:.03em;line-height:1.7;display:block}
+@media(max-width:720px){.path-line{grid-template-columns:1fr;gap:0}.path-line::before{left:6px;right:auto;top:0;bottom:0;width:2px;height:auto}.path-line li{padding:0 0 16px 28px}.path-line li::before{top:6px}}
+.gw-main{display:block;text-decoration:none;color:inherit}
+.gw-links{display:flex;gap:18px;padding-top:0!important;margin-top:-8px}
+.gw-links .go{margin-top:0;text-decoration:none}
+.gw-links .go.sub{color:#756e63}
+.gw-links .go.sub:hover{color:var(--seal)}
 .gateway{margin-top:10px}
 .gw-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
 .gw{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);background:#fff;transition:transform .18s,box-shadow .18s}
@@ -379,19 +399,37 @@ footer .flinks{margin-top:14px}footer .flinks a{color:#6b6459;text-decoration:no
   </div>
 </section>
 
+<section class="path">
+  <div class="wrap">
+    <div class="path-head">
+      <p class="eyebrow">計畫歷程</p>
+      <a class="path-more" href="history/index.html">完整歷程 &rarr;</a>
+    </div>
+    <ol class="path-line">
+      <li class="fade"><b>104年起</b><span>高醫師生進入六龜、桃源</span></li>
+      <li class="fade"><b>109年</b><span>USR-HUB種子計畫</span></li>
+      <li class="fade"><b>112年</b><span>第三期．萌芽型</span></li>
+      <li class="fade now"><b>114年</b><span>第四期．萌芽型（現行）</span></li>
+      <li class="fade future"><b>117年起</b><span>第五期．規劃中</span></li>
+    </ol>
+  </div>
+</section>
+
 <section class="gateway">
   <div class="wrap">
     <h2>您想從哪裡開始？</h2>
     <div class="gw-cards">
-      <a class="gw fade" href="about/index.html">
-        <img src="img/gw-about.jpg" alt="大一新生荖濃場域走讀" width="1400" height="934" loading="lazy" decoding="async">
-        <div class="body">
-          <p class="kicker">認識計畫</p>
-          <h3>計畫全貌</h3>
-          <p>兩大核心宗旨、三大主軸，以及自104年起走出的在地網絡——從這裡認識永續荖濃。</p>
-          <span class="go">了解全貌 &rarr;</span>
-        </div>
-      </a>
+      <div class="gw fade">
+        <a href="about/index.html" class="gw-main">
+          <img src="img/gw-about.jpg" alt="大一新生荖濃場域走讀" width="1400" height="934" loading="lazy" decoding="async">
+          <div class="body">
+            <p class="kicker">認識計畫</p>
+            <h3>計畫全貌</h3>
+            <p>兩大核心宗旨、三大主軸，以及自104年起走出的在地網絡——從這裡認識永續荖濃。</p>
+          </div>
+        </a>
+        <div class="body gw-links"><a class="go" href="about/index.html">了解全貌 &rarr;</a><a class="go sub" href="history/index.html">計畫歷程 &rarr;</a></div>
+      </div>
       <a class="gw fade" href="partner/index.html">
         <img src="img/gw-partner.jpg" alt="2025 USR EXPO成果展出" width="1400" height="1054" loading="lazy" decoding="async">
         <div class="body">
