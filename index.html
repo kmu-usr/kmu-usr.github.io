@@ -387,6 +387,32 @@ footer .flinks{margin-top:14px}footer .flinks a{color:#6b6459;text-decoration:no
 .ext a{color:var(--seal);text-decoration:underline;text-underline-offset:4px}
 .src-note{margin-top:18px;font-size:13px;color:#6b6459;letter-spacing:.04em;line-height:1.9}
 @media(max-width:640px){.sem{grid-template-columns:1fr;gap:6px}.mile{grid-template-columns:1fr}.axes-tbl{font-size:13px}.axes-tbl th,.axes-tbl td{padding:9px 8px}.fold summary{padding:14px 16px}.fold-body{padding:4px 16px 18px}}
+.effect{background:var(--paper)}
+.effect .eyebrow{font-family:'Noto Sans TC',sans-serif;font-size:13px;letter-spacing:.32em;color:var(--seal);font-weight:700;margin-bottom:14px}
+.fx-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:36px;align-items:start}
+.fx-fig{margin:0;background:#fff;border:1px solid var(--line);padding:22px 22px 16px}
+.fx-fig .legend{font-family:'Noto Sans TC',sans-serif;font-size:13px;color:var(--ink-soft);letter-spacing:.04em;margin-bottom:10px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.fx-fig .sw{display:inline-block;width:12px;height:12px;border-radius:2px;margin-left:14px}
+.fx-fig .sw:first-child{margin-left:0}
+.chart{width:100%;height:auto;display:block}
+.chart .s1,.sw.s1{fill:#B3342E;background:#B3342E}
+.chart .s2,.sw.s2{fill:#2B6CB0;background:#2B6CB0}
+.chart path:hover{opacity:.82}
+.chart .ax{font:11.5px 'Noto Sans TC',sans-serif;fill:#756e63}
+.chart .val{font:700 13px 'Noto Sans TC',sans-serif;fill:#1A1A1A}
+.chart .cat{font:13.5px 'Noto Sans TC',sans-serif;fill:#1A1A1A}
+.chart .diff{font:11.5px 'Noto Sans TC',sans-serif;fill:#756e63}
+.fx-fig figcaption{font-family:'Noto Sans TC',sans-serif;font-size:12.5px;color:#6b6459;line-height:1.8;margin-top:12px;letter-spacing:.02em}
+.fx-table{margin-top:10px;font-family:'Noto Sans TC',sans-serif;font-size:13px}
+.fx-table summary{cursor:pointer;color:var(--seal);letter-spacing:.1em}
+.fx-table table{border-collapse:collapse;width:100%;margin-top:8px}
+.fx-table th,.fx-table td{border:1px solid var(--line);padding:6px 10px;text-align:left}
+.fx-side .big{font-family:'Noto Sans TC',sans-serif;font-weight:700;font-size:clamp(40px,6vw,58px);color:var(--seal);line-height:1.1;margin-bottom:18px;letter-spacing:.02em}
+.fx-side .big.s2c{color:#2B6CB0}
+.fx-side .big small{display:block;font-size:13.5px;font-weight:400;color:var(--ink-soft);letter-spacing:.08em;margin-top:6px}
+.fx-note{font-size:15px;color:var(--ink-soft)}
+.fx-note a{color:var(--seal);text-decoration:underline;text-underline-offset:4px}
+@media(max-width:760px){.fx-grid{grid-template-columns:1fr;gap:24px}.fx-side{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fx-note{grid-column:1/-1}}
 .gw-main{display:block;text-decoration:none;color:inherit}
 .gw-links{display:flex;gap:18px;padding-top:0!important;margin-top:-8px}
 .gw-links .go{margin-top:0;text-decoration:none}
@@ -443,6 +469,68 @@ footer .flinks{margin-top:14px}footer .flinks a{color:#6b6459;text-decoration:no
     <div class="stat fade"><b data-n="40" data-suffix="+">40+</b><span>每年受訓大學生講師</span></div>
   </div>
   <p class="stat-src">數據來源：起算年與期別依計畫書；MOU依第四期計畫書名單；服務人次為三主軸合計估計值，依各年度成果報告書；受訓講師數依各學期受訓名冊。</p>
+  </div>
+</section>
+
+<section class="effect">
+  <div class="wrap">
+    <p class="eyebrow">115年度階段性效益評估</p>
+    <h2>把陪伴的效果，用量表追蹤</h2>
+    <p class="lead" style="margin-top:20px">114學年度下學期假日學堂服務學習出隊，參與學生於出隊前、後各填一次「大學生幸福感量表」，並自基線樣本庫配對未參與學生作為對照組（排除無效作答後，參與組30人、對照組50人）。下圖為各面向「出隊後分數進步」的學生比例。</p>
+    <div class="fx-grid">
+      <figure class="fx-fig fade">
+        <div class="legend"><span class="sw s1"></span>參與組（30人）<span class="sw s2"></span>對照組（50人）</div>
+<svg class="chart" viewBox="0 0 640 300" role="img" aria-labelledby="fx-title fx-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="fx-title">出隊後各面向分數進步之學生比例：參與組與對照組</title>
+  <desc id="fx-desc">人際關係：參與組53%、對照組38%；生活滿意：60%、34%；學業成就：60%、32%；整體幸福感：70%、36%。</desc>
+    <line x1="44" y1="242.0" x2="624" y2="242.0" stroke="#e3ddd2" stroke-width="1"/>
+  <text x="36" y="246.0" text-anchor="end" class="ax">0%</text>
+  <line x1="44" y1="188.0" x2="624" y2="188.0" stroke="#e3ddd2" stroke-width="1"/>
+  <text x="36" y="192.0" text-anchor="end" class="ax">20%</text>
+  <line x1="44" y1="134.0" x2="624" y2="134.0" stroke="#e3ddd2" stroke-width="1"/>
+  <text x="36" y="138.0" text-anchor="end" class="ax">40%</text>
+  <line x1="44" y1="80.0" x2="624" y2="80.0" stroke="#e3ddd2" stroke-width="1"/>
+  <text x="36" y="84.0" text-anchor="end" class="ax">60%</text>
+  <line x1="44" y1="26.0" x2="624" y2="26.0" stroke="#e3ddd2" stroke-width="1"/>
+  <text x="36" y="30.0" text-anchor="end" class="ax">80%</text>
+  <path class="s1" d="M85.5,242.0 v-139.1 a4,4 0 0 1 4,-4 h22 a4,4 0 0 1 4,4 v139.1 z"><title>人際關係｜參與組：53%的學生出隊後分數進步</title></path>
+  <text x="100.5" y="92.9" text-anchor="middle" class="val">53%</text>
+  <path class="s2" d="M117.5,242.0 v-98.6 a4,4 0 0 1 4,-4 h22 a4,4 0 0 1 4,4 v98.6 z"><title>人際關係｜對照組：38%的學生出隊後分數進步</title></path>
+  <text x="132.5" y="133.4" text-anchor="middle" class="val">38%</text>
+  <text x="116.5" y="264" text-anchor="middle" class="cat">人際關係</text>
+  <text x="116.5" y="282" text-anchor="middle" class="diff">＋15個百分點</text>
+  <path class="s1" d="M230.5,242.0 v-158.0 a4,4 0 0 1 4,-4 h22 a4,4 0 0 1 4,4 v158.0 z"><title>生活滿意｜參與組：60%的學生出隊後分數進步</title></path>
+  <text x="245.5" y="74.0" text-anchor="middle" class="val">60%</text>
+  <path class="s2" d="M262.5,242.0 v-87.8 a4,4 0 0 1 4,-4 h22 a4,4 0 0 1 4,4 v87.8 z"><title>生活滿意｜對照組：34%的學生出隊後分數進步</title></path>
+  <text x="277.5" y="144.2" text-anchor="middle" class="val">34%</text>
+  <text x="261.5" y="264" text-anchor="middle" class="cat">生活滿意</text>
+  <text x="261.5" y="282" text-anchor="middle" class="diff">＋26個百分點</text>
+  <path class="s1" d="M375.5,242.0 v-158.0 a4,4 0 0 1 4,-4 h22 a4,4 0 0 1 4,4 v158.0 z"><title>學業成就｜參與組：60%的學生出隊後分數進步</title></path>
+  <text x="390.5" y="74.0" text-anchor="middle" class="val">60%</text>
+  <path class="s2" d="M407.5,242.0 v-82.4 a4,4 0 0 1 4,-4 h22 a4,4 0 0 1 4,4 v82.4 z"><title>學業成就｜對照組：32%的學生出隊後分數進步</title></path>
+  <text x="422.5" y="149.6" text-anchor="middle" class="val">32%</text>
+  <text x="406.5" y="264" text-anchor="middle" class="cat">學業成就</text>
+  <text x="406.5" y="282" text-anchor="middle" class="diff">＋28個百分點</text>
+  <path class="s1" d="M520.5,242.0 v-185.0 a4,4 0 0 1 4,-4 h22 a4,4 0 0 1 4,4 v185.0 z"><title>整體幸福感｜參與組：70%的學生出隊後分數進步</title></path>
+  <text x="535.5" y="47.0" text-anchor="middle" class="val">70%</text>
+  <path class="s2" d="M552.5,242.0 v-93.2 a4,4 0 0 1 4,-4 h22 a4,4 0 0 1 4,4 v93.2 z"><title>整體幸福感｜對照組：36%的學生出隊後分數進步</title></path>
+  <text x="567.5" y="138.8" text-anchor="middle" class="val">36%</text>
+  <text x="551.5" y="264" text-anchor="middle" class="cat">整體幸福感</text>
+  <text x="551.5" y="282" text-anchor="middle" class="diff">＋34個百分點</text>
+  <line x1="44" y1="242.0" x2="624" y2="242.0" stroke="#b9b2a5" stroke-width="1"/>
+</svg>
+        <figcaption>整體幸福感：參與組70%進步、對照組36%，相差34個百分點；同期對照組各面向持平或下降。配對抽樣、非隨機分派，結果描述參與學生之變化，不作因果推論。來源：本計畫效益評估報告（115年度）。</figcaption>
+        <details class="fx-table"><summary>數據表</summary>
+          <table><thead><tr><th>面向</th><th>參與組進步比例</th><th>對照組進步比例</th><th>差距</th></tr></thead>
+          <tbody><tr><td>人際關係</td><td>53%</td><td>38%</td><td>＋15個百分點</td></tr><tr><td>生活滿意</td><td>60%</td><td>34%</td><td>＋26個百分點</td></tr><tr><td>學業成就</td><td>60%</td><td>32%</td><td>＋28個百分點</td></tr><tr><td>整體幸福感</td><td>70%</td><td>36%</td><td>＋34個百分點</td></tr></tbody></table>
+        </details>
+      </figure>
+      <div class="fx-side fade">
+        <p class="big">70%<small>參與組整體幸福感提升</small></p>
+        <p class="big s2c">36%<small>對照組整體幸福感提升</small></p>
+        <p class="fx-note">兩組進步比例相差34個百分點；組間效果量d＝0.52（中等）。前導研究（114年度，n＝38）與完整敘述見<a href="partner/index.html">企業合作頁「大學生端成效」</a>。</p>
+      </div>
+    </div>
   </div>
 </section>
 

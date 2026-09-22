@@ -348,6 +348,9 @@ footer .flinks{margin-top:14px}footer .flinks a{color:#6b6459;text-decoration:no
 
 .topbar{position:sticky;top:0;z-index:50;background:rgba(250,247,242,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 24px}
+.topbar .tb-left{display:flex;align-items:center;gap:14px}
+.topbar a.home{font-family:'Noto Sans TC',sans-serif;font-size:14px;letter-spacing:.12em;color:var(--ink-soft);text-decoration:none;white-space:nowrap}
+.topbar a.home:hover{color:var(--seal)}
 .topbar .brand img{height:34px;width:auto;display:block}
 .topbar a.nav{font-family:'Noto Sans TC',sans-serif;font-size:14px;letter-spacing:.12em;color:var(--ink-soft);text-decoration:none}
 .topbar a.nav:hover{color:var(--seal)}
@@ -358,7 +361,7 @@ footer .flinks{margin-top:14px}footer .flinks a{color:#6b6459;text-decoration:no
 <body>
 <nav class="topbar">
   <div class="wrap">
-    <a class="brand" href="../index.html" aria-label="回首頁"><img src="../img/laonong.png" alt="永續荖濃" width="420" height="355"></a>
+    <div class="tb-left"><a class="home" href="../index.html">&larr; 首頁</a><a class="brand" href="../index.html" aria-label="回首頁"><img src="../img/laonong.png" alt="永續荖濃" width="420" height="355"></a></div>
     <a class="nav" href="../about/index.html">計畫全貌 &rarr;</a>
   </div>
 </nav>
