@@ -123,6 +123,7 @@ img{max-width:100%;height:auto;display:block}
   color:var(--seal);letter-spacing:.02em;
 }
 .stat span{font-size:13px;color:var(--ink-soft);letter-spacing:.08em}
+.stats .stat-src{margin-top:18px;text-align:center;font-size:12px;color:#756e63;letter-spacing:.04em;line-height:1.8;font-family:'Noto Sans TC',sans-serif}
 @media(max-width:720px){
   .stats .grid{grid-template-columns:repeat(2,1fr);gap:28px 8px}
   .stat:last-child{grid-column:1/-1}
@@ -334,6 +335,7 @@ footer .divider{width:1px;height:52px;background:var(--line)}
   footer .divider{width:52px;height:1px}
 }
 footer p{font-size:13px;color:#6b6459;letter-spacing:.1em;line-height:2;font-family:'Noto Sans TC',sans-serif}
+footer .flinks{margin-top:14px}footer .flinks a{color:#6b6459;text-decoration:none;border-bottom:1px solid var(--line)}footer .flinks a:hover{color:var(--seal)}
 
 /* ---------- 進場動畫 ---------- */
 .fade{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
@@ -372,7 +374,9 @@ footer p{font-size:13px;color:#6b6459;letter-spacing:.1em;line-height:2;font-fam
     <div class="stat fade"><b data-n="5">5</b><span>系核心參與學系</span></div>
     <div class="stat fade"><b data-n="400" data-suffix="+">400+</b><span>年服務人次（三主軸合計）</span></div>
     <div class="stat fade"><b data-n="40" data-suffix="+">40+</b><span>每年受訓大學生講師</span></div>
-  </div></div>
+  </div>
+  <p class="stat-src">數據來源：起算年與期別依計畫書；MOU依第四期計畫書名單；服務人次為三主軸合計估計值，依各年度成果報告書；受訓講師數依各學期受訓名冊。</p>
+  </div>
 </section>
 
 <section class="gateway">
@@ -429,6 +433,7 @@ footer p{font-size:13px;color:#6b6459;letter-spacing:.1em;line-height:2;font-fam
     <p>永續荖濃人才培育與健康發展計畫（荖濃USR）<br>
     <span class="nb">高雄醫學大學</span>　<span class="nb">口腔醫學院</span><br>
     教育部大學社會責任實踐計畫（USR）第四期</p>
+    <p class="flinks"><a href="about/index.html">計畫全貌</a>｜<a href="history/index.html">計畫歷程</a>｜<a href="partner/index.html">企業合作</a>｜<a href="school/index.html">學校合作</a></p>
   </div>
 </footer>
 
