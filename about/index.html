@@ -405,6 +405,29 @@ footer .flinks{margin-top:14px}footer .flinks a{color:#6b6459;text-decoration:no
   .axis-media{grid-template-columns:1fr}
   .svc-grid{grid-template-columns:1fr}
 }
+.axis-media.quad{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.axis-media.quad{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){.axis-media.quad{grid-template-columns:1fr}}
+
+/* ---------- 桌遊接力（v13） ---------- */
+.relay{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.relay .chain{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:stretch;margin-top:8px}
+.relay .node{background:var(--paper);border:1px solid var(--line);padding:26px 22px}
+.relay .node .stage{font-family:'Noto Sans TC',sans-serif;font-size:13px;letter-spacing:.2em;color:var(--seal);font-weight:700;margin-bottom:10px}
+.relay .node h3{font-size:19px;letter-spacing:.05em;margin-bottom:10px}
+.relay .node p{font-size:14.5px;color:var(--ink-soft);line-height:1.9}
+.relay .arrow{display:flex;align-items:center;padding:0 10px;color:var(--seal);font-size:22px;font-family:'Noto Sans TC',sans-serif}
+.relay .media{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}
+.relay .media figure{border:1px solid var(--line);background:#fff}
+.relay .media img{aspect-ratio:3/2;object-fit:cover;width:100%}
+.relay .media figcaption{font-family:'Noto Sans TC',sans-serif;font-size:12px;color:#6b6459;padding:8px 10px}
+.relay .note{margin-top:22px;font-size:14px;color:var(--ink-soft);line-height:1.9}
+.relay .conclusion{margin-top:30px;text-align:center;font-size:clamp(16px,2.4vw,19px);color:var(--gold);font-weight:700;letter-spacing:.06em}
+@media(max-width:760px){
+  .relay .chain{grid-template-columns:1fr}
+  .relay .arrow{justify-content:center;padding:6px 0;transform:rotate(90deg)}
+  .relay .media{grid-template-columns:1fr}
+}
 
 </style>
 <noscript><style>.fade{opacity:1;transform:none}</style></noscript>
@@ -497,6 +520,7 @@ footer .flinks{margin-top:14px}footer .flinks a{color:#6b6459;text-decoration:no
       <div class="impact fade">
         <h4>一個具體的例子</h4>
         <p>心路基金會六龜日間服務據點的學員多為智能障礙者，需要反覆而針對性的指導。口腔衛生學系師生每月進入據點陪伴練習，一年後多數學員已掌握合格的刷牙技巧。在地牙醫師觀察，過去需要根管治療的嚴重齲齒，如今多只需補牙即可處理。</p>
+        <p>另據心路基金會六龜據點紀錄，學員午間刷牙率始終維持100%。</p>
       </div>
     </div>
 
@@ -509,14 +533,50 @@ footer .flinks{margin-top:14px}footer .flinks a{color:#6b6459;text-decoration:no
         <li><b>STEAM創新培育課程</b>——系統培訓假日學堂講師</li>
         <li><b>社會實踐微學程</b>——把服務學習納入正式課程</li>
         <li><b>成果展出</b>——2025 USR EXPO展出口腔衛教桌遊等</li>
-        <li><b>跨校共構</b>——與長榮大學、實踐大學、國立屏東大學簽署MOU</li>
+        <li><b>學生自製教具</b>——口腔保健桌遊由學生開發、帶入場域並交棒新一屆（<a href="#boardgame">見下方</a>）</li>
+        <li><b>跨校共構</b>——與長榮大學、實踐大學、國立屏東大學簽署MOU；114學年度下學期坩堝社、扶社與屏大教育學院舉辦線上交流會</li>
       </ul>
-      <div class="axis-media">
+      <div class="axis-media quad">
         <figure class="fade"><img src="../img/about-walk.jpg" alt="荖濃場域走讀" width="1040" height="693" loading="lazy" decoding="async"><figcaption>大一新生．荖濃場域走讀</figcaption></figure>
         <figure class="fade"><img src="../img/about-steam.jpg" alt="STEAM創新培育課程" width="1040" height="585" loading="lazy" decoding="async"><figcaption>STEAM創新培育課程</figcaption></figure>
         <figure class="fade"><img src="../img/about-expo.jpg" alt="2025 USR EXPO成果展出" width="1040" height="585" loading="lazy" decoding="async"><figcaption>2025 USR EXPO成果展出</figcaption></figure>
+        <figure class="fade"><img src="../img/about-exchange.jpg" alt="坩堝社、扶社與屏大教育學院線上交流會" width="1040" height="693" loading="lazy" decoding="async"><figcaption>跨校共構．屏大線上交流會</figcaption></figure>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="relay" id="boardgame">
+  <div class="wrap">
+    <p class="eyebrow">學生自製衛教教具</p>
+    <h2>口腔保健桌遊，從開發到交棒</h2>
+    <p class="lead" style="margin-top:20px">從學生提案，到走進假日學堂，再交棒給<span class="nb">新一屆學生</span>——一套教具，也是一條人才培育的路。</p>
+    <div class="chain">
+      <div class="node fade">
+        <p class="stage">113學年度下學期</p>
+        <h3>學生團隊開發</h3>
+        <p>牙醫學系、口腔衛生學系、醫學系、藥學系、醫藥暨應用化學系與運動醫學系學生組成團隊，從提案、設計工作坊到規則定稿，內容與美術全由學生完成。</p>
+      </div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="node fade">
+        <p class="stage">114學年度上學期</p>
+        <h3>印製，走進假日學堂</h3>
+        <p>全套156張卡片完成印製，帶入龍興國小假日學堂。貝氏刷牙法四要點化為「清潔卡」，17種事件卡串起蛀牙成因、含氟用品、定期檢查與口腔癌防治。</p>
+      </div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="node fade">
+        <p class="stage">115學年度上學期</p>
+        <h3>工作坊，交棒新一屆</h3>
+        <p>為扶社團隊辦理桌遊開發工作坊，邀請專業講師講授遊戲開發與機制規劃，首場於115年9月22日辦理，由新一屆學生從機制設計到試玩修正接手開發。</p>
+      </div>
+    </div>
+    <div class="media">
+      <figure class="fade"><img src="../img/school-game.jpg" alt="假日學堂學童使用口腔保健桌遊" width="1040" height="780" loading="lazy" decoding="async"><figcaption>龍興國小假日學堂．學童使用口腔保健桌遊</figcaption></figure>
+      <figure class="fade"><img src="../img/about-game-lecture.jpg" alt="桌遊開發工作坊講師授課" width="1040" height="693" loading="lazy" decoding="async"><figcaption>桌遊開發工作坊．遊戲開發與機制規劃</figcaption></figure>
+      <figure class="fade"><img src="../img/about-game-playtest.jpg" alt="桌遊開發工作坊學員分組試玩" width="1040" height="693" loading="lazy" decoding="async"><figcaption>桌遊開發工作坊．學員分組試玩</figcaption></figure>
+    </div>
+    <p class="note">口腔衛生學系學生並在教師指導下，以此桌遊完成校內大專生研究計畫。</p>
+    <p class="conclusion">讓一次性的教具製作，成為可以年年傳承的人才培育模組。</p>
   </div>
 </section>
 
